@@ -1,0 +1,40 @@
+com.handpay.shell.DexOperation -> com.handpay.shell.DexOperation:
+    java.lang.String[] initEnvriment(java.lang.String) -> initEnvriment
+    void nativeEnableTurboDex() -> nativeEnableTurboDex
+    void nativeDisableTurboDex() -> nativeDisableTurboDex
+    boolean enableTurboDex() -> a
+    void disableTurboDex() -> b
+    void copyProgressData(android.app.Application,java.lang.String) -> a
+    void hookDexLoader(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    byte[] readDexFileFromApk(android.app.Application) -> a
+    void splitPayLoadFromDex(byte[],java.lang.String) -> a
+    byte[] decrypt(byte[]) -> a
+    android.app.Application intefaceApplication(android.app.Application,java.lang.String) -> b
+    boolean isArtMode() -> c
+com.handpay.shell.PlatformInfo -> com.handpay.shell.a:
+    int getAPIVersion() -> a
+    java.lang.String getAppLibDir(java.lang.String) -> a
+com.handpay.shell.ProxyApplication -> com.handpay.shell.ProxyApplication:
+    java.lang.String apkFileName -> d
+    java.lang.String odexPath -> e
+    java.lang.String libPath -> f
+    boolean isSupportARM7 -> g
+    boolean isSupportARM -> h
+    java.lang.String packageName -> i
+    android.content.res.AssetManager mAssetManager -> a
+    android.content.res.Resources mResources -> b
+    android.content.res.Resources$Theme mTheme -> c
+    void initApplicationEnvriment() -> a
+    void attachBaseContext(android.content.Context) -> attachBaseContext
+    void onCreate() -> onCreate
+    void copyLib(java.io.File) -> a
+    void nioTransferCopy(java.io.File,java.io.File) -> a
+    android.content.res.AssetManager getAssets() -> getAssets
+    android.content.res.Resources getResources() -> getResources
+    android.content.res.Resources$Theme getTheme() -> getTheme
+    void onTerminate() -> onTerminate
+com.handpay.shell.RefInvoke -> com.handpay.shell.b:
+    java.lang.Object invokeStaticMethod(java.lang.String,java.lang.String,java.lang.Class[],java.lang.Object[]) -> a
+    java.lang.Object invokeMethod(java.lang.String,java.lang.String,java.lang.Object,java.lang.Class[],java.lang.Object[]) -> a
+    java.lang.Object getFieldOjbect(java.lang.String,java.lang.Object,java.lang.String) -> a
+    void setFieldOjbect(java.lang.String,java.lang.String,java.lang.Object,java.lang.Object) -> a

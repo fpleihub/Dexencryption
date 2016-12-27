@@ -1,0 +1,13 @@
+com.handpay.shell.DexOperation
+com.handpay.shell.DexOperation: java.lang.String[] initEnvriment(java.lang.String)
+com.handpay.shell.DexOperation: void nativeEnableTurboDex()
+com.handpay.shell.DexOperation: void nativeDisableTurboDex()
+com.handpay.shell.ProxyApplication
+com.handpay.shell.ProxyApplication: ProxyApplication()
+com.handpay.shell.R$dimen: int activity_horizontal_margin
+com.handpay.shell.R$dimen: int activity_vertical_margin
+com.handpay.shell.R$drawable: int ic_launcher
+com.handpay.shell.R$layout: int activity_main
+com.handpay.shell.R$string: int action_settings
+com.handpay.shell.R$string: int app_name
+com.handpay.shell.R$string: int hello_world

@@ -1,0 +1,20 @@
+com.handpay.shell.BuildConfig
+com.handpay.shell.DexOperation:
+    36:36:public DexOperation()
+com.handpay.shell.PlatformInfo:
+    10:10:public PlatformInfo()
+    19:89:public static java.lang.Object[] getCpuArchitecture()
+com.handpay.shell.ProxyApplication:
+    private static final java.lang.String appkey
+    159:175:protected void loadResources(java.lang.String)
+    193:218:private void isSupport(java.lang.Object[])
+com.handpay.shell.R
+com.handpay.shell.R$attr
+com.handpay.shell.R$dimen
+com.handpay.shell.R$drawable
+com.handpay.shell.R$layout
+com.handpay.shell.R$string
+com.handpay.shell.RefInvoke:
+    7:7:public RefInvoke()
+    125:145:public static java.lang.Object getStaticFieldOjbect(java.lang.String,java.lang.String)
+    188:208:public static void setStaticOjbect(java.lang.String,java.lang.String,java.lang.Object)

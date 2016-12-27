@@ -1,0 +1,2639 @@
+_____________________________________________________________________
++ Program class: com/handpay/shell/DexOperation
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.handpay.shell.DexOperation extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 324):
+  + String []
+  + String [2]
+  + String [CurrentEvriment is Art,Hook dex]
+  + String [android.app.ActivityThread]
+  + String [android.app.ActivityThread$AppBindData]
+  + String [android.app.ActivityThread$ProviderClientRecord]
+  + String [android.app.Instrumentation]
+  + String [android.app.LoadedApk]
+  + String [android.content.ContentProvider]
+  + String [appInfo]
+  + String [classes.dex]
+  + String [currentActivityThread]
+  + String [handpayjiagu]
+  + String [info]
+  + String [java.vm.version]
+  + String [mAllApplications]
+  + String [mApplication]
+  + String [mApplicationInfo]
+  + String [mBoundApplication]
+  + String [mClassLoader]
+  + String [mContext]
+  + String [mInitialApplication]
+  + String [mLocalProvider]
+  + String [mPackages]
+  + String [mProviderMap]
+  + String [makeApplication]
+  + String [newApplication]
+  + String [result]
+  + Class [[B]
+  + Class [android/app/Application]
+  + Class [android/app/Instrumentation]
+  + Class [android/content/Context]
+  + Class [android/content/pm/ApplicationInfo]
+  + Class [android/os/Build$VERSION]
+  + Class [android/util/ArrayMap]
+  + Class [android/util/Log]
+  + Class [com/handpay/shell/DexOperation]
+  + Class [com/handpay/shell/b]
+  + Class [dalvik/system/DexClassLoader]
+  + Class [java/io/BufferedInputStream]
+  + Class [java/io/ByteArrayInputStream]
+  + Class [java/io/ByteArrayOutputStream]
+  + Class [java/io/DataInputStream]
+  + Class [java/io/File]
+  + Class [java/io/FileInputStream]
+  + Class [java/io/FileOutputStream]
+  + Class [java/io/IOException]
+  + Class [java/lang/Boolean]
+  + Class [java/lang/Class]
+  + Class [java/lang/ClassLoader]
+  + Class [java/lang/Exception]
+  + Class [java/lang/Object]
+  + Class [java/lang/RuntimeException]
+  + Class [java/lang/String]
+  + Class [java/lang/System]
+  + Class [java/lang/Throwable]
+  + Class [java/lang/ref/WeakReference]
+  + Class [java/util/ArrayList]
+  + Class [java/util/Collection]
+  + Class [java/util/HashMap]
+  + Class [java/util/Iterator]
+  + Class [java/util/zip/ZipEntry]
+  + Class [java/util/zip/ZipInputStream]
+  + Fieldref [android/content/pm/ApplicationInfo.className Ljava/lang/String;]
+  + Fieldref [android/content/pm/ApplicationInfo.sourceDir Ljava/lang/String;]
+  + Fieldref [android/os/Build$VERSION.SDK_INT I]
+  + Fieldref [java/lang/Boolean.TYPE Ljava/lang/Class;]
+  + Methodref [android/app/Application.getApplicationInfo ()Landroid/content/pm/ApplicationInfo;]
+  + Methodref [android/util/ArrayMap.get (Ljava/lang/Object;)Ljava/lang/Object;]
+  + Methodref [android/util/ArrayMap.values ()Ljava/util/Collection;]
+  + Methodref [android/util/Log.e (Ljava/lang/String;Ljava/lang/String;)I]
+  + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+  + Methodref [com/handpay/shell/DexOperation.a (Landroid/app/Application;)[B]
+  + Methodref [com/handpay/shell/DexOperation.a ([B)[B]
+  + Methodref [com/handpay/shell/DexOperation.a ([BLjava/lang/String;)V]
+  + Methodref [com/handpay/shell/DexOperation.c ()Z]
+  + Methodref [com/handpay/shell/DexOperation.nativeDisableTurboDex ()V]
+  + Methodref [com/handpay/shell/DexOperation.nativeEnableTurboDex ()V]
+  + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;]
+  + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V]
+  + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;]
+  + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;]
+  + Methodref [dalvik/system/DexClassLoader.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;)V]
+  + Methodref [java/io/BufferedInputStream.<init> (Ljava/io/InputStream;)V]
+  + Methodref [java/io/ByteArrayInputStream.<init> ([B)V]
+  + Methodref [java/io/ByteArrayOutputStream.<init> ()V]
+  + Methodref [java/io/ByteArrayOutputStream.toByteArray ()[B]
+  + Methodref [java/io/ByteArrayOutputStream.write ([BII)V]
+  + Methodref [java/io/DataInputStream.<init> (Ljava/io/InputStream;)V]
+  + Methodref [java/io/DataInputStream.readInt ()I]
+  + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
+  + Methodref [java/io/File.createNewFile ()Z]
+  + Methodref [java/io/File.exists ()Z]
+  + Methodref [java/io/FileInputStream.<init> (Ljava/lang/String;)V]
+  + Methodref [java/io/FileOutputStream.<init> (Ljava/io/File;)V]
+  + Methodref [java/io/FileOutputStream.close ()V]
+  + Methodref [java/io/FileOutputStream.write ([B)V]
+  + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+  + Methodref [java/lang/Class.forName (Ljava/lang/String;)Ljava/lang/Class;]
+  + Methodref [java/lang/Exception.toString ()Ljava/lang/String;]
+  + Methodref [java/lang/RuntimeException.<init> (Ljava/lang/Throwable;)V]
+  + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
+  + Methodref [java/lang/String.length ()I]
+  + Methodref [java/lang/String.startsWith (Ljava/lang/String;)Z]
+  + Methodref [java/lang/System.arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V]
+  + Methodref [java/lang/System.getProperty (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + Methodref [java/lang/System.loadLibrary (Ljava/lang/String;)V]
+  + Methodref [java/lang/Throwable.printStackTrace ()V]
+  + Methodref [java/lang/ref/WeakReference.get ()Ljava/lang/Object;]
+  + Methodref [java/util/ArrayList.remove (Ljava/lang/Object;)Z]
+  + Methodref [java/util/HashMap.get (Ljava/lang/Object;)Ljava/lang/Object;]
+  + Methodref [java/util/HashMap.values ()Ljava/util/Collection;]
+  + Methodref [java/util/zip/ZipEntry.getName ()Ljava/lang/String;]
+  + Methodref [java/util/zip/ZipInputStream.<init> (Ljava/io/InputStream;)V]
+  + Methodref [java/util/zip/ZipInputStream.close ()V]
+  + Methodref [java/util/zip/ZipInputStream.closeEntry ()V]
+  + Methodref [java/util/zip/ZipInputStream.getNextEntry ()Ljava/util/zip/ZipEntry;]
+  + Methodref [java/util/zip/ZipInputStream.read ([B)I]
+  + InterfaceMethodref [java/util/Collection.iterator ()Ljava/util/Iterator;]
+  + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+  + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Ljava/io/File;)V]
+  + NameAndType [<init> (Ljava/io/InputStream;)V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;)V]
+  + NameAndType [<init> (Ljava/lang/Throwable;)V]
+  + NameAndType [<init> ([B)V]
+  + NameAndType [SDK_INT I]
+  + NameAndType [TYPE Ljava/lang/Class;]
+  + NameAndType [a (Landroid/app/Application;)[B]
+  + NameAndType [a (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;]
+  + NameAndType [a (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V]
+  + NameAndType [a (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;]
+  + NameAndType [a (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;]
+  + NameAndType [a ([B)[B]
+  + NameAndType [a ([BLjava/lang/String;)V]
+  + NameAndType [arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V]
+  + NameAndType [c ()Z]
+  + NameAndType [className Ljava/lang/String;]
+  + NameAndType [close ()V]
+  + NameAndType [closeEntry ()V]
+  + NameAndType [createNewFile ()Z]
+  + NameAndType [e (Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [equals (Ljava/lang/Object;)Z]
+  + NameAndType [exists ()Z]
+  + NameAndType [forName (Ljava/lang/String;)Ljava/lang/Class;]
+  + NameAndType [get ()Ljava/lang/Object;]
+  + NameAndType [get (Ljava/lang/Object;)Ljava/lang/Object;]
+  + NameAndType [getApplicationInfo ()Landroid/content/pm/ApplicationInfo;]
+  + NameAndType [getName ()Ljava/lang/String;]
+  + NameAndType [getNextEntry ()Ljava/util/zip/ZipEntry;]
+  + NameAndType [getProperty (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [hasNext ()Z]
+  + NameAndType [i (Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [iterator ()Ljava/util/Iterator;]
+  + NameAndType [length ()I]
+  + NameAndType [loadLibrary (Ljava/lang/String;)V]
+  + NameAndType [nativeDisableTurboDex ()V]
+  + NameAndType [nativeEnableTurboDex ()V]
+  + NameAndType [next ()Ljava/lang/Object;]
+  + NameAndType [printStackTrace ()V]
+  + NameAndType [read ([B)I]
+  + NameAndType [readInt ()I]
+  + NameAndType [remove (Ljava/lang/Object;)Z]
+  + NameAndType [sourceDir Ljava/lang/String;]
+  + NameAndType [startsWith (Ljava/lang/String;)Z]
+  + NameAndType [toByteArray ()[B]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + NameAndType [valueOf (Z)Ljava/lang/Boolean;]
+  + NameAndType [values ()Ljava/util/Collection;]
+  + NameAndType [write ([B)V]
+  + NameAndType [write ([BII)V]
+  + Utf8 []
+  + Utf8 [()I]
+  + Utf8 [()Landroid/content/pm/ApplicationInfo;]
+  + Utf8 [()Ljava/lang/Object;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()Ljava/util/Collection;]
+  + Utf8 [()Ljava/util/Iterator;]
+  + Utf8 [()Ljava/util/zip/ZipEntry;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [()[B]
+  + Utf8 [(Landroid/app/Application;)[B]
+  + Utf8 [(Landroid/app/Application;Ljava/lang/String;)Landroid/app/Application;]
+  + Utf8 [(Landroid/app/Application;Ljava/lang/String;)V]
+  + Utf8 [(Ljava/io/File;)V]
+  + Utf8 [(Ljava/io/InputStream;)V]
+  + Utf8 [(Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/Object;)Z]
+  + Utf8 [(Ljava/lang/Object;ILjava/lang/Object;II)V]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/Class;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;)Z]
+  + Utf8 [(Ljava/lang/String;)[Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/Throwable;)V]
+  + Utf8 [(Z)Ljava/lang/Boolean;]
+  + Utf8 [([B)I]
+  + Utf8 [([B)V]
+  + Utf8 [([B)[B]
+  + Utf8 [([BII)V]
+  + Utf8 [([BLjava/lang/String;)V]
+  + Utf8 [2]
+  + Utf8 [<clinit>]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [CurrentEvriment is Art,Hook dex]
+  + Utf8 [I]
+  + Utf8 [Landroid/annotation/SuppressLint;]
+  + Utf8 [Ljava/lang/Class;]
+  + Utf8 [Ljava/lang/String;]
+  + Utf8 [NewApi]
+  + Utf8 [RuntimeInvisibleAnnotations]
+  + Utf8 [SDK_INT]
+  + Utf8 [StackMapTable]
+  + Utf8 [TYPE]
+  + Utf8 [[B]
+  + Utf8 [a]
+  + Utf8 [android.app.ActivityThread]
+  + Utf8 [android.app.ActivityThread$AppBindData]
+  + Utf8 [android.app.ActivityThread$ProviderClientRecord]
+  + Utf8 [android.app.Instrumentation]
+  + Utf8 [android.app.LoadedApk]
+  + Utf8 [android.content.ContentProvider]
+  + Utf8 [android/app/Application]
+  + Utf8 [android/app/Instrumentation]
+  + Utf8 [android/content/Context]
+  + Utf8 [android/content/pm/ApplicationInfo]
+  + Utf8 [android/os/Build$VERSION]
+  + Utf8 [android/util/ArrayMap]
+  + Utf8 [android/util/Log]
+  + Utf8 [appInfo]
+  + Utf8 [arraycopy]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [className]
+  + Utf8 [classes.dex]
+  + Utf8 [close]
+  + Utf8 [closeEntry]
+  + Utf8 [com/handpay/shell/DexOperation]
+  + Utf8 [com/handpay/shell/b]
+  + Utf8 [createNewFile]
+  + Utf8 [currentActivityThread]
+  + Utf8 [dalvik/system/DexClassLoader]
+  + Utf8 [e]
+  + Utf8 [equals]
+  + Utf8 [exists]
+  + Utf8 [forName]
+  + Utf8 [get]
+  + Utf8 [getApplicationInfo]
+  + Utf8 [getName]
+  + Utf8 [getNextEntry]
+  + Utf8 [getProperty]
+  + Utf8 [handpayjiagu]
+  + Utf8 [hasNext]
+  + Utf8 [i]
+  + Utf8 [info]
+  + Utf8 [initEnvriment]
+  + Utf8 [iterator]
+  + Utf8 [java.vm.version]
+  + Utf8 [java/io/BufferedInputStream]
+  + Utf8 [java/io/ByteArrayInputStream]
+  + Utf8 [java/io/ByteArrayOutputStream]
+  + Utf8 [java/io/DataInputStream]
+  + Utf8 [java/io/File]
+  + Utf8 [java/io/FileInputStream]
+  + Utf8 [java/io/FileOutputStream]
+  + Utf8 [java/io/IOException]
+  + Utf8 [java/lang/Boolean]
+  + Utf8 [java/lang/Class]
+  + Utf8 [java/lang/ClassLoader]
+  + Utf8 [java/lang/Exception]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/RuntimeException]
+  + Utf8 [java/lang/String]
+  + Utf8 [java/lang/System]
+  + Utf8 [java/lang/Throwable]
+  + Utf8 [java/lang/ref/WeakReference]
+  + Utf8 [java/util/ArrayList]
+  + Utf8 [java/util/Collection]
+  + Utf8 [java/util/HashMap]
+  + Utf8 [java/util/Iterator]
+  + Utf8 [java/util/zip/ZipEntry]
+  + Utf8 [java/util/zip/ZipInputStream]
+  + Utf8 [length]
+  + Utf8 [loadLibrary]
+  + Utf8 [mAllApplications]
+  + Utf8 [mApplication]
+  + Utf8 [mApplicationInfo]
+  + Utf8 [mBoundApplication]
+  + Utf8 [mClassLoader]
+  + Utf8 [mContext]
+  + Utf8 [mInitialApplication]
+  + Utf8 [mLocalProvider]
+  + Utf8 [mPackages]
+  + Utf8 [mProviderMap]
+  + Utf8 [makeApplication]
+  + Utf8 [nativeDisableTurboDex]
+  + Utf8 [nativeEnableTurboDex]
+  + Utf8 [newApplication]
+  + Utf8 [next]
+  + Utf8 [printStackTrace]
+  + Utf8 [read]
+  + Utf8 [readInt]
+  + Utf8 [remove]
+  + Utf8 [result]
+  + Utf8 [sourceDir]
+  + Utf8 [startsWith]
+  + Utf8 [toByteArray]
+  + Utf8 [toString]
+  + Utf8 [value]
+  + Utf8 [valueOf]
+  + Utf8 [values]
+  + Utf8 [write]
+
+Fields (count = 0):
+
+Methods (count = 13):
+  - Method:       <clinit>()V
+    Access flags: 0x8
+      = static void <clinit>()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 0, stack = 1):
+      [0] ldc #13
+        + String [handpayjiagu]
+      [2] invokestatic #107
+        + Methodref [java/lang/System.loadLibrary (Ljava/lang/String;)V]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       initEnvriment(Ljava/lang/String;)[Ljava/lang/String;
+    Access flags: 0x108
+      = static native java.lang.String[] initEnvriment(java.lang.String)
+  + Method:       nativeEnableTurboDex()V
+    Access flags: 0x108
+      = static native void nativeEnableTurboDex()
+  + Method:       nativeDisableTurboDex()V
+    Access flags: 0x108
+      = static native void nativeDisableTurboDex()
+  + Method:       a()Z
+    Access flags: 0x9
+      = public static boolean a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 26, locals = 1, stack = 2):
+      [0] invokestatic #76
+        + Methodref [com/handpay/shell/DexOperation.c ()Z]
+      [3] ifeq +21 (target=24)
+      [6] ldc #28
+        + String [result]
+      [8] ldc #3
+        + String [CurrentEvriment is Art,Hook dex]
+      [10] invokestatic #72
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [13] pop
+      [14] invokestatic #78
+        + Methodref [com/handpay/shell/DexOperation.nativeEnableTurboDex ()V]
+      [17] iconst_1
+      [18] ireturn
+      [19] astore_0 v0
+      [20] aload_0 v0
+      [21] invokevirtual #108
+        + Methodref [java/lang/Throwable.printStackTrace ()V]
+      [24] iconst_0
+      [25] ireturn
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (14 -> 17: 19):
+      + Class [java/lang/Throwable]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [19] Var: ..., Stack: [a:java/lang/Throwable]
+        - [24] Var: ..., Stack: (empty)
+  + Method:       b()V
+    Access flags: 0x9
+      = public static void b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 12, locals = 1, stack = 1):
+      [0] invokestatic #77
+        + Methodref [com/handpay/shell/DexOperation.nativeDisableTurboDex ()V]
+      [3] goto +8 (target=11)
+      [6] astore_0 v0
+      [7] aload_0 v0
+      [8] invokevirtual #108
+        + Methodref [java/lang/Throwable.printStackTrace ()V]
+      [11] return
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (0 -> 3: 6):
+      + Class [java/lang/Throwable]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [6] Var: ..., Stack: [a:java/lang/Throwable]
+        - [11] Var: ..., Stack: (empty)
+  + Method:       a(Landroid/app/Application;Ljava/lang/String;)V
+    Access flags: 0x9
+      = public static void a(android.app.Application,java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 32, locals = 4, stack = 3):
+      [0] new #44
+        + Class [java/io/File]
+      [3] dup
+      [4] aload_1 v1
+      [5] invokespecial #91
+        + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
+      [8] astore_2 v2
+      [9] aload_2 v2
+      [10] invokevirtual #93
+        + Methodref [java/io/File.exists ()Z]
+      [13] ifne +18 (target=31)
+      [16] aload_2 v2
+      [17] invokevirtual #92
+        + Methodref [java/io/File.createNewFile ()Z]
+      [20] pop
+      [21] aload_0 v0
+      [22] invokestatic #73
+        + Methodref [com/handpay/shell/DexOperation.a (Landroid/app/Application;)[B]
+      [25] astore_3 v3
+      [26] aload_3 v3
+      [27] aload_1 v1
+      [28] invokestatic #75
+        + Methodref [com/handpay/shell/DexOperation.a ([BLjava/lang/String;)V]
+      [31] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [31] Var: ...[a:java/io/File], Stack: (empty)
+  + Method:       a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    Access flags: 0x9
+      = public static void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 123, locals = 7, stack = 8):
+      [0] ldc #4
+        + String [android.app.ActivityThread]
+      [2] ldc #12
+        + String [currentActivityThread]
+      [4] iconst_0
+      [5] anewarray #49
+        + Class [java/lang/Class]
+      [8] iconst_0
+      [9] anewarray #52
+        + Class [java/lang/Object]
+      [12] invokestatic #82
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;]
+      [15] astore v4
+      [17] aconst_null
+      [18] astore v5
+      [20] getstatic #66
+        + Fieldref [android/os/Build$VERSION.SDK_INT I]
+      [23] bipush 19
+      [25] ificmpge +31 (target=56)
+      [28] ldc #4
+        + String [android.app.ActivityThread]
+      [30] aload v4
+      [32] ldc #24
+        + String [mPackages]
+      [34] invokestatic #79
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;]
+      [37] checkcast #60
+        + Class [java/util/HashMap]
+      [40] astore v6
+      [42] aload v6
+      [44] aload_0 v0
+      [45] invokevirtual #111
+        + Methodref [java/util/HashMap.get (Ljava/lang/Object;)Ljava/lang/Object;]
+      [48] checkcast #57
+        + Class [java/lang/ref/WeakReference]
+      [51] astore v5
+      [53] goto +28 (target=81)
+      [56] ldc #4
+        + String [android.app.ActivityThread]
+      [58] aload v4
+      [60] ldc #24
+        + String [mPackages]
+      [62] invokestatic #79
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;]
+      [65] checkcast #35
+        + Class [android/util/ArrayMap]
+      [68] astore v6
+      [70] aload v6
+      [72] aload_0 v0
+      [73] invokevirtual #69
+        + Methodref [android/util/ArrayMap.get (Ljava/lang/Object;)Ljava/lang/Object;]
+      [76] checkcast #57
+        + Class [java/lang/ref/WeakReference]
+      [79] astore v5
+      [81] new #39
+        + Class [dalvik/system/DexClassLoader]
+      [84] dup
+      [85] aload_1 v1
+      [86] aload_2 v2
+      [87] aload_3 v3
+      [88] ldc #8
+        + String [android.app.LoadedApk]
+      [90] aload v5
+      [92] invokevirtual #109
+        + Methodref [java/lang/ref/WeakReference.get ()Ljava/lang/Object;]
+      [95] ldc #20
+        + String [mClassLoader]
+      [97] invokestatic #79
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;]
+      [100] checkcast #50
+        + Class [java/lang/ClassLoader]
+      [103] invokespecial #83
+        + Methodref [dalvik/system/DexClassLoader.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;)V]
+      [106] astore v6
+      [108] ldc #8
+        + String [android.app.LoadedApk]
+      [110] ldc #20
+        + String [mClassLoader]
+      [112] aload v5
+      [114] invokevirtual #109
+        + Methodref [java/lang/ref/WeakReference.get ()Ljava/lang/Object;]
+      [117] aload v6
+      [119] invokestatic #80
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V]
+      [122] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [56] Var: ...[a:java/lang/Object][a:java/lang/ref/WeakReference], Stack: (empty)
+        - [81] Var: ..., Stack: (empty)
+  + Method:       a(Landroid/app/Application;)[B
+    Access flags: 0x9
+      = public static byte[] a(android.app.Application)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 117, locals = 6, stack = 7):
+      [0] new #42
+        + Class [java/io/ByteArrayOutputStream]
+      [3] dup
+      [4] invokespecial #86
+        + Methodref [java/io/ByteArrayOutputStream.<init> ()V]
+      [7] astore_1 v1
+      [8] new #63
+        + Class [java/util/zip/ZipInputStream]
+      [11] dup
+      [12] new #40
+        + Class [java/io/BufferedInputStream]
+      [15] dup
+      [16] new #45
+        + Class [java/io/FileInputStream]
+      [19] dup
+      [20] aload_0 v0
+      [21] invokevirtual #68
+        + Methodref [android/app/Application.getApplicationInfo ()Landroid/content/pm/ApplicationInfo;]
+      [24] getfield #65
+        + Fieldref [android/content/pm/ApplicationInfo.sourceDir Ljava/lang/String;]
+      [27] invokespecial #94
+        + Methodref [java/io/FileInputStream.<init> (Ljava/lang/String;)V]
+      [30] invokespecial #84
+        + Methodref [java/io/BufferedInputStream.<init> (Ljava/io/InputStream;)V]
+      [33] invokespecial #114
+        + Methodref [java/util/zip/ZipInputStream.<init> (Ljava/io/InputStream;)V]
+      [36] astore_2 v2
+      [37] aload_2 v2
+      [38] invokevirtual #117
+        + Methodref [java/util/zip/ZipInputStream.getNextEntry ()Ljava/util/zip/ZipEntry;]
+      [41] astore_3 v3
+      [42] aload_3 v3
+      [43] ifnonnull +10 (target=53)
+      [46] aload_2 v2
+      [47] invokevirtual #115
+        + Methodref [java/util/zip/ZipInputStream.close ()V]
+      [50] goto +58 (target=108)
+      [53] aload_3 v3
+      [54] invokevirtual #113
+        + Methodref [java/util/zip/ZipEntry.getName ()Ljava/lang/String;]
+      [57] ldc #11
+        + String [classes.dex]
+      [59] invokevirtual #102
+        + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
+      [62] ifeq +39 (target=101)
+      [65] sipush 1024
+      [68] newarray 8
+      [70] astore v4
+      [72] aload_2 v2
+      [73] aload v4
+      [75] invokevirtual #118
+        + Methodref [java/util/zip/ZipInputStream.read ([B)I]
+      [78] istore v5
+      [80] iload v5
+      [82] iconst_m1
+      [83] ificmpne +6 (target=89)
+      [86] goto +15 (target=101)
+      [89] aload_1 v1
+      [90] aload v4
+      [92] iconst_0
+      [93] iload v5
+      [95] invokevirtual #88
+        + Methodref [java/io/ByteArrayOutputStream.write ([BII)V]
+      [98] goto -26 (target=72)
+      [101] aload_2 v2
+      [102] invokevirtual #116
+        + Methodref [java/util/zip/ZipInputStream.closeEntry ()V]
+      [105] goto -68 (target=37)
+      [108] aload_2 v2
+      [109] invokevirtual #115
+        + Methodref [java/util/zip/ZipInputStream.close ()V]
+      [112] aload_1 v1
+      [113] invokevirtual #87
+        + Methodref [java/io/ByteArrayOutputStream.toByteArray ()[B]
+      [116] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 6):
+        - [37] Var: ...[a:java/io/ByteArrayOutputStream][a:java/util/zip/ZipInputStream], Stack: (empty)
+        - [53] Var: ...[a:java/util/zip/ZipEntry], Stack: (empty)
+        - [72] Var: ...[a:[B], Stack: (empty)
+        - [89] Var: ...[i], Stack: (empty)
+        - [101] Var: -2, Stack: (empty)
+        - [108] Var: -1, Stack: (empty)
+  + Method:       a([BLjava/lang/String;)V
+    Access flags: 0xa
+      = private static void a(byte[],java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 122, locals = 10, stack = 5):
+      [0] aload_0 v0
+      [1] arraylength
+      [2] istore_2 v2
+      [3] iconst_4
+      [4] newarray 8
+      [6] astore_3 v3
+      [7] aload_0 v0
+      [8] iload_2 v2
+      [9] iconst_4
+      [10] isub
+      [11] aload_3 v3
+      [12] iconst_0
+      [13] iconst_4
+      [14] invokestatic #105
+        + Methodref [java/lang/System.arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V]
+      [17] new #41
+        + Class [java/io/ByteArrayInputStream]
+      [20] dup
+      [21] aload_3 v3
+      [22] invokespecial #85
+        + Methodref [java/io/ByteArrayInputStream.<init> ([B)V]
+      [25] astore v4
+      [27] new #43
+        + Class [java/io/DataInputStream]
+      [30] dup
+      [31] aload v4
+      [33] invokespecial #89
+        + Methodref [java/io/DataInputStream.<init> (Ljava/io/InputStream;)V]
+      [36] astore v5
+      [38] aload v5
+      [40] invokevirtual #90
+        + Methodref [java/io/DataInputStream.readInt ()I]
+      [43] istore v6
+      [45] iload v6
+      [47] newarray 8
+      [49] astore v7
+      [51] aload_0 v0
+      [52] iload_2 v2
+      [53] iconst_4
+      [54] isub
+      [55] iload v6
+      [57] isub
+      [58] aload v7
+      [60] iconst_0
+      [61] iload v6
+      [63] invokestatic #105
+        + Methodref [java/lang/System.arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V]
+      [66] aload v7
+      [68] invokestatic #74
+        + Methodref [com/handpay/shell/DexOperation.a ([B)[B]
+      [71] astore v7
+      [73] new #44
+        + Class [java/io/File]
+      [76] dup
+      [77] aload_1 v1
+      [78] invokespecial #91
+        + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
+      [81] astore v8
+      [83] new #46
+        + Class [java/io/FileOutputStream]
+      [86] dup
+      [87] aload v8
+      [89] invokespecial #95
+        + Methodref [java/io/FileOutputStream.<init> (Ljava/io/File;)V]
+      [92] astore v9
+      [94] aload v9
+      [96] aload v7
+      [98] invokevirtual #97
+        + Methodref [java/io/FileOutputStream.write ([B)V]
+      [101] aload v9
+      [103] invokevirtual #96
+        + Methodref [java/io/FileOutputStream.close ()V]
+      [106] goto +15 (target=121)
+      [109] astore v9
+      [111] new #53
+        + Class [java/lang/RuntimeException]
+      [114] dup
+      [115] aload v9
+      [117] invokespecial #101
+        + Methodref [java/lang/RuntimeException.<init> (Ljava/lang/Throwable;)V]
+      [120] athrow
+      [121] return
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (83 -> 106: 109):
+      + Class [java/io/IOException]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [109] Var: [a:[B][a:java/lang/String][i][a:[B][a:java/io/ByteArrayInputStream][a:java/io/DataInputStream][i][a:[B][a:java/io/File], Stack: [a:java/io/IOException]
+        - [121] Var: ..., Stack: (empty)
+  + Method:       a([B)[B
+    Access flags: 0xa
+      = private static byte[] a(byte[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 27, locals = 2, stack = 5):
+      [0] iconst_0
+      [1] istore_1 v1
+      [2] goto +17 (target=19)
+      [5] aload_0 v0
+      [6] iload_1 v1
+      [7] sipush 255
+      [10] aload_0 v0
+      [11] iload_1 v1
+      [12] baload
+      [13] ixor
+      [14] i2b
+      [15] bastore
+      [16] iinc v1, 1
+      [19] iload_1 v1
+      [20] aload_0 v0
+      [21] arraylength
+      [22] ificmplt -17 (target=5)
+      [25] aload_0 v0
+      [26] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [5] Var: ...[i], Stack: (empty)
+        - [19] Var: ..., Stack: (empty)
+  + Method:       b(Landroid/app/Application;Ljava/lang/String;)Landroid/app/Application;
+    Access flags: 0x9
+      = public static android.app.Application b(android.app.Application,java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 410, locals = 14, stack = 8):
+      [0] aload_1 v1
+      [1] ifnull +407 (target=408)
+      [4] ldc #4
+        + String [android.app.ActivityThread]
+      [6] ldc #12
+        + String [currentActivityThread]
+      [8] iconst_0
+      [9] anewarray #49
+        + Class [java/lang/Class]
+      [12] iconst_0
+      [13] anewarray #52
+        + Class [java/lang/Object]
+      [16] invokestatic #82
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;]
+      [19] astore_2 v2
+      [20] ldc #4
+        + String [android.app.ActivityThread]
+      [22] aload_2 v2
+      [23] ldc #19
+        + String [mBoundApplication]
+      [25] invokestatic #79
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;]
+      [28] astore_3 v3
+      [29] ldc #5
+        + String [android.app.ActivityThread$AppBindData]
+      [31] aload_3 v3
+      [32] ldc #14
+        + String [info]
+      [34] invokestatic #79
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;]
+      [37] astore v4
+      [39] ldc #8
+        + String [android.app.LoadedApk]
+      [41] ldc #17
+        + String [mApplication]
+      [43] aload v4
+      [45] aconst_null
+      [46] invokestatic #80
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V]
+      [49] ldc #4
+        + String [android.app.ActivityThread]
+      [51] aload_2 v2
+      [52] ldc #22
+        + String [mInitialApplication]
+      [54] invokestatic #79
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;]
+      [57] astore v5
+      [59] ldc #4
+        + String [android.app.ActivityThread]
+      [61] aload_2 v2
+      [62] ldc #16
+        + String [mAllApplications]
+      [64] invokestatic #79
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;]
+      [67] checkcast #58
+        + Class [java/util/ArrayList]
+      [70] astore v6
+      [72] aload v6
+      [74] aload v5
+      [76] invokevirtual #110
+        + Methodref [java/util/ArrayList.remove (Ljava/lang/Object;)Z]
+      [79] pop
+      [80] ldc #8
+        + String [android.app.LoadedApk]
+      [82] aload v4
+      [84] ldc #18
+        + String [mApplicationInfo]
+      [86] invokestatic #79
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;]
+      [89] checkcast #33
+        + Class [android/content/pm/ApplicationInfo]
+      [92] astore v7
+      [94] ldc #5
+        + String [android.app.ActivityThread$AppBindData]
+      [96] aload_3 v3
+      [97] ldc #10
+        + String [appInfo]
+      [99] invokestatic #79
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;]
+      [102] checkcast #33
+        + Class [android/content/pm/ApplicationInfo]
+      [105] astore v8
+      [107] aload_1 v1
+      [108] ifnull +22 (target=130)
+      [111] aload_1 v1
+      [112] invokevirtual #103
+        + Methodref [java/lang/String.length ()I]
+      [115] ifle +15 (target=130)
+      [118] aload v7
+      [120] aload_1 v1
+      [121] putfield #64
+        + Fieldref [android/content/pm/ApplicationInfo.className Ljava/lang/String;]
+      [124] aload v8
+      [126] aload_1 v1
+      [127] putfield #64
+        + Fieldref [android/content/pm/ApplicationInfo.className Ljava/lang/String;]
+      [130] ldc #8
+        + String [android.app.LoadedApk]
+      [132] ldc #26
+        + String [makeApplication]
+      [134] aload v4
+      [136] iconst_2
+      [137] anewarray #49
+        + Class [java/lang/Class]
+      [140] dup
+      [141] iconst_0
+      [142] getstatic #67
+        + Fieldref [java/lang/Boolean.TYPE Ljava/lang/Class;]
+      [145] aastore
+      [146] dup
+      [147] iconst_1
+      [148] ldc #31
+        + Class [android/app/Instrumentation]
+      [150] aastore
+      [151] iconst_2
+      [152] anewarray #52
+        + Class [java/lang/Object]
+      [155] dup
+      [156] iconst_0
+      [157] iconst_0
+      [158] invokestatic #98
+        + Methodref [java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;]
+      [161] aastore
+      [162] invokestatic #81
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;]
+      [165] checkcast #30
+        + Class [android/app/Application]
+      [168] astore v9
+      [170] aload v9
+      [172] ifnonnull +64 (target=236)
+      [175] aload_1 v1
+      [176] invokestatic #99
+        + Methodref [java/lang/Class.forName (Ljava/lang/String;)Ljava/lang/Class;]
+      [179] astore v10
+      [181] ldc #7
+        + String [android.app.Instrumentation]
+      [183] ldc #27
+        + String [newApplication]
+      [185] iconst_2
+      [186] anewarray #49
+        + Class [java/lang/Class]
+      [189] dup
+      [190] iconst_0
+      [191] ldc #49
+        + Class [java/lang/Class]
+      [193] aastore
+      [194] dup
+      [195] iconst_1
+      [196] ldc #32
+        + Class [android/content/Context]
+      [198] aastore
+      [199] iconst_2
+      [200] anewarray #52
+        + Class [java/lang/Object]
+      [203] dup
+      [204] iconst_0
+      [205] aload v10
+      [207] aastore
+      [208] dup
+      [209] iconst_1
+      [210] aload_0 v0
+      [211] aastore
+      [212] invokestatic #82
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;]
+      [215] checkcast #30
+        + Class [android/app/Application]
+      [218] astore v9
+      [220] goto +16 (target=236)
+      [223] astore v10
+      [225] ldc #28
+        + String [result]
+      [227] aload v10
+      [229] invokevirtual #100
+        + Methodref [java/lang/Exception.toString ()Ljava/lang/String;]
+      [232] invokestatic #71
+        + Methodref [android/util/Log.e (Ljava/lang/String;Ljava/lang/String;)I]
+      [235] pop
+      [236] ldc #4
+        + String [android.app.ActivityThread]
+      [238] ldc #22
+        + String [mInitialApplication]
+      [240] aload_2 v2
+      [241] aload v9
+      [243] invokestatic #80
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V]
+      [246] getstatic #66
+        + Fieldref [android/os/Build$VERSION.SDK_INT I]
+      [249] bipush 19
+      [251] ificmpge +75 (target=326)
+      [254] ldc #4
+        + String [android.app.ActivityThread]
+      [256] aload_2 v2
+      [257] ldc #25
+        + String [mProviderMap]
+      [259] invokestatic #79
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;]
+      [262] checkcast #60
+        + Class [java/util/HashMap]
+      [265] astore v10
+      [267] aload v10
+      [269] invokevirtual #112
+        + Methodref [java/util/HashMap.values ()Ljava/util/Collection;]
+      [272] invokeinterface #119
+        + InterfaceMethodref [java/util/Collection.iterator ()Ljava/util/Iterator;]
+      [277] astore v11
+      [279] goto +34 (target=313)
+      [282] aload v11
+      [284] invokeinterface #121
+        + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+      [289] astore v12
+      [291] ldc #6
+        + String [android.app.ActivityThread$ProviderClientRecord]
+      [293] aload v12
+      [295] ldc #23
+        + String [mLocalProvider]
+      [297] invokestatic #79
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;]
+      [300] astore v13
+      [302] ldc #9
+        + String [android.content.ContentProvider]
+      [304] ldc #21
+        + String [mContext]
+      [306] aload v13
+      [308] aload v9
+      [310] invokestatic #80
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V]
+      [313] aload v11
+      [315] invokeinterface #120
+        + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [320] ifne -38 (target=282)
+      [323] goto +82 (target=405)
+      [326] ldc #4
+        + String [android.app.ActivityThread]
+      [328] aload_2 v2
+      [329] ldc #25
+        + String [mProviderMap]
+      [331] invokestatic #79
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;]
+      [334] checkcast #35
+        + Class [android/util/ArrayMap]
+      [337] astore v10
+      [339] aload v10
+      [341] invokevirtual #70
+        + Methodref [android/util/ArrayMap.values ()Ljava/util/Collection;]
+      [344] invokeinterface #119
+        + InterfaceMethodref [java/util/Collection.iterator ()Ljava/util/Iterator;]
+      [349] astore v11
+      [351] goto +44 (target=395)
+      [354] aload v11
+      [356] invokeinterface #121
+        + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+      [361] astore v12
+      [363] aload v12
+      [365] ifnull +30 (target=395)
+      [368] ldc #6
+        + String [android.app.ActivityThread$ProviderClientRecord]
+      [370] aload v12
+      [372] ldc #23
+        + String [mLocalProvider]
+      [374] invokestatic #79
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;]
+      [377] astore v13
+      [379] aload v13
+      [381] ifnull +14 (target=395)
+      [384] ldc #9
+        + String [android.content.ContentProvider]
+      [386] ldc #21
+        + String [mContext]
+      [388] aload v13
+      [390] aload v9
+      [392] invokestatic #80
+        + Methodref [com/handpay/shell/b.a (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V]
+      [395] aload v11
+      [397] invokeinterface #120
+        + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [402] ifne -48 (target=354)
+      [405] aload v9
+      [407] areturn
+      [408] aconst_null
+      [409] areturn
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (170 -> 220: 223):
+      + Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 11):
+        - [130] Var: [a:android/app/Application][a:java/lang/String][a:java/lang/Object][a:java/lang/Object][a:java/lang/Object][a:java/lang/Object][a:java/util/ArrayList][a:android/content/pm/ApplicationInfo][a:android/content/pm/ApplicationInfo], Stack: 
+        - [220] Var: ...[a:android/app/Application], Stack: (empty)
+        - [223] Var: ..., Stack: [a:java/lang/Exception]
+        - [236] Var: ..., Stack: (empty)
+        - [282] Var: ...[a:java/util/HashMap][a:java/util/Iterator], Stack: (empty)
+        - [313] Var: ..., Stack: (empty)
+        - [326] Var: -2, Stack: (empty)
+        - [354] Var: ...[a:android/util/ArrayMap][a:java/util/Iterator], Stack: (empty)
+        - [395] Var: ..., Stack: (empty)
+        - [405] Var: -2, Stack: (empty)
+        - [408] Var: [a:android/app/Application][a:java/lang/String], Stack: 
+  + Method:       c()Z
+    Access flags: 0xa
+      = private static boolean c()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 13, locals = 0, stack = 2):
+      [0] ldc #15
+        + String [java.vm.version]
+      [2] ldc #1
+        + String []
+      [4] invokestatic #106
+        + Methodref [java/lang/System.getProperty (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [7] ldc #2
+        + String [2]
+      [9] invokevirtual #104
+        + Methodref [java/lang/String.startsWith (Ljava/lang/String;)Z]
+      [12] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 1):
+  + Runtime invisible annotations attribute:
+    - Annotation [Landroid/annotation/SuppressLint;]:
+      - Array element value [value]:
+        + Constant element value [(default) '115']
+          + Utf8 [NewApi]
+
+_____________________________________________________________________
++ Program class: com/handpay/shell/a
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.handpay.shell.a extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 33):
+  + String [/data/data/]
+  + String [/lib]
+  + Class [android/os/Build$VERSION]
+  + Class [com/handpay/shell/a]
+  + Class [java/lang/Object]
+  + Class [java/lang/StringBuilder]
+  + Fieldref [android/os/Build$VERSION.SDK_INT I]
+  + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+  + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [SDK_INT I]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + Utf8 [()I]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [/data/data/]
+  + Utf8 [/lib]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [SDK_INT]
+  + Utf8 [a]
+  + Utf8 [android/os/Build$VERSION]
+  + Utf8 [append]
+  + Utf8 [com/handpay/shell/a]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [toString]
+
+Fields (count = 0):
+
+Methods (count = 2):
+  + Method:       a()I
+    Access flags: 0x9
+      = public static int a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 4, locals = 0, stack = 1):
+      [0] getstatic #7
+        + Fieldref [android/os/Build$VERSION.SDK_INT I]
+      [3] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Ljava/lang/String;)Ljava/lang/String;
+    Access flags: 0x9
+      = public static java.lang.String a(java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 22, locals = 1, stack = 3):
+      [0] new #6
+        + Class [java/lang/StringBuilder]
+      [3] dup
+      [4] ldc #1
+        + String [/data/data/]
+      [6] invokespecial #8
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [9] aload_0 v0
+      [10] invokevirtual #9
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [13] ldc #2
+        + String [/lib]
+      [15] invokevirtual #9
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [18] invokevirtual #10
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [21] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/handpay/shell/ProxyApplication
+  Superclass:    android/app/Application
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.handpay.shell.ProxyApplication extends android.app.Application
+
+Interfaces (count = 0):
+
+Constant Pool (count = 297):
+  + Integer [19]
+  + String [.]
+  + String [.dex]
+  + String [/]
+  + String [APPLICATION_CLASS_NAME]
+  + String [Build.VERSION.SDK_INT:]
+  + String [apkFileName:]
+  + String [chookdex_time:]
+  + String [copyprogressData_time:]
+  + String [error:]
+  + String [have no application class name]
+  + String [init_envriment_time:]
+  + String [intefaceapplication_time]
+  + String [lib not find]
+  + String [libPath:]
+  + String [load dex enableTurboDex:]
+  + String [odexPath:]
+  + String [result]
+  + Class [[Ljava/io/File;]
+  + Class [[Ljava/lang/String;]
+  + Class [android/app/Application]
+  + Class [android/content/Context]
+  + Class [android/content/pm/ApplicationInfo]
+  + Class [android/content/pm/PackageManager]
+  + Class [android/content/pm/PackageManager$NameNotFoundException]
+  + Class [android/content/res/AssetManager]
+  + Class [android/content/res/Resources]
+  + Class [android/content/res/Resources$Theme]
+  + Class [android/os/Build$VERSION]
+  + Class [android/os/Bundle]
+  + Class [android/util/Log]
+  + Class [com/handpay/shell/DexOperation]
+  + Class [com/handpay/shell/ProxyApplication]
+  + Class [com/handpay/shell/a]
+  + Class [java/io/File]
+  + Class [java/io/FileInputStream]
+  + Class [java/io/FileOutputStream]
+  + Class [java/io/IOException]
+  + Class [java/lang/Exception]
+  + Class [java/lang/String]
+  + Class [java/lang/StringBuilder]
+  + Class [java/lang/System]
+  + Class [java/lang/Throwable]
+  + Class [java/nio/channels/FileChannel]
+  + Fieldref [android/content/pm/ApplicationInfo.metaData Landroid/os/Bundle;]
+  + Fieldref [android/os/Build$VERSION.SDK_INT I]
+  + Fieldref [com/handpay/shell/ProxyApplication.a Landroid/content/res/AssetManager;]
+  + Fieldref [com/handpay/shell/ProxyApplication.b Landroid/content/res/Resources;]
+  + Fieldref [com/handpay/shell/ProxyApplication.c Landroid/content/res/Resources$Theme;]
+  + Fieldref [com/handpay/shell/ProxyApplication.d Ljava/lang/String;]
+  + Fieldref [com/handpay/shell/ProxyApplication.e Ljava/lang/String;]
+  + Fieldref [com/handpay/shell/ProxyApplication.f Ljava/lang/String;]
+  + Fieldref [com/handpay/shell/ProxyApplication.g Z]
+  + Fieldref [com/handpay/shell/ProxyApplication.h Z]
+  + Fieldref [com/handpay/shell/ProxyApplication.i Ljava/lang/String;]
+  + Methodref [android/app/Application.<init> ()V]
+  + Methodref [android/app/Application.attachBaseContext (Landroid/content/Context;)V]
+  + Methodref [android/app/Application.getAssets ()Landroid/content/res/AssetManager;]
+  + Methodref [android/app/Application.getResources ()Landroid/content/res/Resources;]
+  + Methodref [android/app/Application.getTheme ()Landroid/content/res/Resources$Theme;]
+  + Methodref [android/app/Application.onCreate ()V]
+  + Methodref [android/app/Application.onTerminate ()V]
+  + Methodref [android/content/pm/PackageManager.getApplicationInfo (Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;]
+  + Methodref [android/content/pm/PackageManager$NameNotFoundException.printStackTrace ()V]
+  + Methodref [android/os/Bundle.containsKey (Ljava/lang/String;)Z]
+  + Methodref [android/os/Bundle.getString (Ljava/lang/String;)Ljava/lang/String;]
+  + Methodref [android/util/Log.getStackTraceString (Ljava/lang/Throwable;)Ljava/lang/String;]
+  + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+  + Methodref [com/handpay/shell/DexOperation.a ()Z]
+  + Methodref [com/handpay/shell/DexOperation.a (Landroid/app/Application;Ljava/lang/String;)V]
+  + Methodref [com/handpay/shell/DexOperation.a (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V]
+  + Methodref [com/handpay/shell/DexOperation.b ()V]
+  + Methodref [com/handpay/shell/DexOperation.b (Landroid/app/Application;Ljava/lang/String;)Landroid/app/Application;]
+  + Methodref [com/handpay/shell/DexOperation.initEnvriment (Ljava/lang/String;)[Ljava/lang/String;]
+  + Methodref [com/handpay/shell/ProxyApplication.a ()V]
+  + Methodref [com/handpay/shell/ProxyApplication.a (Ljava/io/File;)V]
+  + Methodref [com/handpay/shell/ProxyApplication.a (Ljava/io/File;Ljava/io/File;)V]
+  + Methodref [com/handpay/shell/ProxyApplication.getPackageManager ()Landroid/content/pm/PackageManager;]
+  + Methodref [com/handpay/shell/ProxyApplication.getPackageName ()Ljava/lang/String;]
+  + Methodref [com/handpay/shell/a.a ()I]
+  + Methodref [com/handpay/shell/a.a (Ljava/lang/String;)Ljava/lang/String;]
+  + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
+  + Methodref [java/io/File.createNewFile ()Z]
+  + Methodref [java/io/File.delete ()Z]
+  + Methodref [java/io/File.exists ()Z]
+  + Methodref [java/io/File.getAbsolutePath ()Ljava/lang/String;]
+  + Methodref [java/io/File.getName ()Ljava/lang/String;]
+  + Methodref [java/io/File.listFiles ()[Ljava/io/File;]
+  + Methodref [java/io/FileInputStream.<init> (Ljava/io/File;)V]
+  + Methodref [java/io/FileInputStream.close ()V]
+  + Methodref [java/io/FileInputStream.getChannel ()Ljava/nio/channels/FileChannel;]
+  + Methodref [java/io/FileOutputStream.<init> (Ljava/io/File;)V]
+  + Methodref [java/io/FileOutputStream.close ()V]
+  + Methodref [java/io/FileOutputStream.getChannel ()Ljava/nio/channels/FileChannel;]
+  + Methodref [java/io/IOException.printStackTrace ()V]
+  + Methodref [java/lang/Exception.printStackTrace ()V]
+  + Methodref [java/lang/String.lastIndexOf (Ljava/lang/String;)I]
+  + Methodref [java/lang/String.substring (I)Ljava/lang/String;]
+  + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
+  + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+  + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.append (J)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.append (Z)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  + Methodref [java/lang/System.currentTimeMillis ()J]
+  + Methodref [java/nio/channels/FileChannel.close ()V]
+  + Methodref [java/nio/channels/FileChannel.size ()J]
+  + Methodref [java/nio/channels/FileChannel.transferTo (JJLjava/nio/channels/WritableByteChannel;)J]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Ljava/io/File;)V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [SDK_INT I]
+  + NameAndType [a ()I]
+  + NameAndType [a ()V]
+  + NameAndType [a ()Z]
+  + NameAndType [a (Landroid/app/Application;Ljava/lang/String;)V]
+  + NameAndType [a (Ljava/io/File;)V]
+  + NameAndType [a (Ljava/io/File;Ljava/io/File;)V]
+  + NameAndType [a (Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [a (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V]
+  + NameAndType [a Landroid/content/res/AssetManager;]
+  + NameAndType [append (I)Ljava/lang/StringBuilder;]
+  + NameAndType [append (J)Ljava/lang/StringBuilder;]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [append (Z)Ljava/lang/StringBuilder;]
+  + NameAndType [attachBaseContext (Landroid/content/Context;)V]
+  + NameAndType [b ()V]
+  + NameAndType [b (Landroid/app/Application;Ljava/lang/String;)Landroid/app/Application;]
+  + NameAndType [b Landroid/content/res/Resources;]
+  + NameAndType [c Landroid/content/res/Resources$Theme;]
+  + NameAndType [close ()V]
+  + NameAndType [containsKey (Ljava/lang/String;)Z]
+  + NameAndType [createNewFile ()Z]
+  + NameAndType [currentTimeMillis ()J]
+  + NameAndType [d Ljava/lang/String;]
+  + NameAndType [delete ()Z]
+  + NameAndType [e Ljava/lang/String;]
+  + NameAndType [exists ()Z]
+  + NameAndType [f Ljava/lang/String;]
+  + NameAndType [g Z]
+  + NameAndType [getAbsolutePath ()Ljava/lang/String;]
+  + NameAndType [getApplicationInfo (Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;]
+  + NameAndType [getAssets ()Landroid/content/res/AssetManager;]
+  + NameAndType [getChannel ()Ljava/nio/channels/FileChannel;]
+  + NameAndType [getName ()Ljava/lang/String;]
+  + NameAndType [getPackageManager ()Landroid/content/pm/PackageManager;]
+  + NameAndType [getPackageName ()Ljava/lang/String;]
+  + NameAndType [getResources ()Landroid/content/res/Resources;]
+  + NameAndType [getStackTraceString (Ljava/lang/Throwable;)Ljava/lang/String;]
+  + NameAndType [getString (Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [getTheme ()Landroid/content/res/Resources$Theme;]
+  + NameAndType [h Z]
+  + NameAndType [i (Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [i Ljava/lang/String;]
+  + NameAndType [initEnvriment (Ljava/lang/String;)[Ljava/lang/String;]
+  + NameAndType [lastIndexOf (Ljava/lang/String;)I]
+  + NameAndType [listFiles ()[Ljava/io/File;]
+  + NameAndType [metaData Landroid/os/Bundle;]
+  + NameAndType [onCreate ()V]
+  + NameAndType [onTerminate ()V]
+  + NameAndType [printStackTrace ()V]
+  + NameAndType [size ()J]
+  + NameAndType [substring (I)Ljava/lang/String;]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + NameAndType [transferTo (JJLjava/nio/channels/WritableByteChannel;)J]
+  + NameAndType [valueOf (Ljava/lang/Object;)Ljava/lang/String;]
+  + Utf8 [()I]
+  + Utf8 [()J]
+  + Utf8 [()Landroid/content/pm/PackageManager;]
+  + Utf8 [()Landroid/content/res/AssetManager;]
+  + Utf8 [()Landroid/content/res/Resources$Theme;]
+  + Utf8 [()Landroid/content/res/Resources;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()Ljava/nio/channels/FileChannel;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [()[Ljava/io/File;]
+  + Utf8 [(I)Ljava/lang/String;]
+  + Utf8 [(I)Ljava/lang/StringBuilder;]
+  + Utf8 [(J)Ljava/lang/StringBuilder;]
+  + Utf8 [(JJLjava/nio/channels/WritableByteChannel;)J]
+  + Utf8 [(Landroid/app/Application;Ljava/lang/String;)Landroid/app/Application;]
+  + Utf8 [(Landroid/app/Application;Ljava/lang/String;)V]
+  + Utf8 [(Landroid/content/Context;)V]
+  + Utf8 [(Ljava/io/File;)V]
+  + Utf8 [(Ljava/io/File;Ljava/io/File;)V]
+  + Utf8 [(Ljava/lang/Object;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;)I]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;)Z]
+  + Utf8 [(Ljava/lang/String;)[Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/Throwable;)Ljava/lang/String;]
+  + Utf8 [(Z)Ljava/lang/StringBuilder;]
+  + Utf8 [.]
+  + Utf8 [.dex]
+  + Utf8 [/]
+  + Utf8 [<init>]
+  + Utf8 [APPLICATION_CLASS_NAME]
+  + Utf8 [Build.VERSION.SDK_INT:]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [Landroid/annotation/TargetApi;]
+  + Utf8 [Landroid/content/res/AssetManager;]
+  + Utf8 [Landroid/content/res/Resources$Theme;]
+  + Utf8 [Landroid/content/res/Resources;]
+  + Utf8 [Landroid/os/Bundle;]
+  + Utf8 [Ljava/lang/String;]
+  + Utf8 [RuntimeInvisibleAnnotations]
+  + Utf8 [SDK_INT]
+  + Utf8 [StackMapTable]
+  + Utf8 [Z]
+  + Utf8 [[Ljava/io/File;]
+  + Utf8 [[Ljava/lang/String;]
+  + Utf8 [a]
+  + Utf8 [android/app/Application]
+  + Utf8 [android/content/Context]
+  + Utf8 [android/content/pm/ApplicationInfo]
+  + Utf8 [android/content/pm/PackageManager]
+  + Utf8 [android/content/pm/PackageManager$NameNotFoundException]
+  + Utf8 [android/content/res/AssetManager]
+  + Utf8 [android/content/res/Resources]
+  + Utf8 [android/content/res/Resources$Theme]
+  + Utf8 [android/os/Build$VERSION]
+  + Utf8 [android/os/Bundle]
+  + Utf8 [android/util/Log]
+  + Utf8 [apkFileName:]
+  + Utf8 [append]
+  + Utf8 [attachBaseContext]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [chookdex_time:]
+  + Utf8 [close]
+  + Utf8 [com/handpay/shell/DexOperation]
+  + Utf8 [com/handpay/shell/ProxyApplication]
+  + Utf8 [com/handpay/shell/a]
+  + Utf8 [containsKey]
+  + Utf8 [copyprogressData_time:]
+  + Utf8 [createNewFile]
+  + Utf8 [currentTimeMillis]
+  + Utf8 [d]
+  + Utf8 [delete]
+  + Utf8 [e]
+  + Utf8 [error:]
+  + Utf8 [exists]
+  + Utf8 [f]
+  + Utf8 [g]
+  + Utf8 [getAbsolutePath]
+  + Utf8 [getApplicationInfo]
+  + Utf8 [getAssets]
+  + Utf8 [getChannel]
+  + Utf8 [getName]
+  + Utf8 [getPackageManager]
+  + Utf8 [getPackageName]
+  + Utf8 [getResources]
+  + Utf8 [getStackTraceString]
+  + Utf8 [getString]
+  + Utf8 [getTheme]
+  + Utf8 [h]
+  + Utf8 [have no application class name]
+  + Utf8 [i]
+  + Utf8 [initEnvriment]
+  + Utf8 [init_envriment_time:]
+  + Utf8 [intefaceapplication_time]
+  + Utf8 [java/io/File]
+  + Utf8 [java/io/FileInputStream]
+  + Utf8 [java/io/FileOutputStream]
+  + Utf8 [java/io/IOException]
+  + Utf8 [java/lang/Exception]
+  + Utf8 [java/lang/String]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [java/lang/System]
+  + Utf8 [java/lang/Throwable]
+  + Utf8 [java/nio/channels/FileChannel]
+  + Utf8 [lastIndexOf]
+  + Utf8 [lib not find]
+  + Utf8 [libPath:]
+  + Utf8 [listFiles]
+  + Utf8 [load dex enableTurboDex:]
+  + Utf8 [metaData]
+  + Utf8 [odexPath:]
+  + Utf8 [onCreate]
+  + Utf8 [onTerminate]
+  + Utf8 [printStackTrace]
+  + Utf8 [result]
+  + Utf8 [size]
+  + Utf8 [substring]
+  + Utf8 [toString]
+  + Utf8 [transferTo]
+  + Utf8 [value]
+  + Utf8 [valueOf]
+
+Fields (count = 9):
+  + Field:        d Ljava/lang/String;
+    Access flags: 0x2
+      = private java.lang.String d
+  + Field:        e Ljava/lang/String;
+    Access flags: 0x2
+      = private java.lang.String e
+  + Field:        f Ljava/lang/String;
+    Access flags: 0x2
+      = private java.lang.String f
+  + Field:        g Z
+    Access flags: 0x2
+      = private boolean g
+  + Field:        h Z
+    Access flags: 0x2
+      = private boolean h
+  + Field:        i Ljava/lang/String;
+    Access flags: 0x2
+      = private java.lang.String i
+  + Field:        a Landroid/content/res/AssetManager;
+    Access flags: 0x4
+      = protected android.content.res.AssetManager a
+  + Field:        b Landroid/content/res/Resources;
+    Access flags: 0x4
+      = protected android.content.res.Resources b
+  + Field:        c Landroid/content/res/Resources$Theme;
+    Access flags: 0x4
+      = protected android.content.res.Resources$Theme c
+
+Methods (count = 10):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public ProxyApplication()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 20, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #56
+        + Methodref [android/app/Application.<init> ()V]
+      [4] aload_0 v0
+      [5] iconst_0
+      [6] putfield #53
+        + Fieldref [com/handpay/shell/ProxyApplication.g Z]
+      [9] aload_0 v0
+      [10] iconst_1
+      [11] putfield #54
+        + Fieldref [com/handpay/shell/ProxyApplication.h Z]
+      [14] aload_0 v0
+      [15] aconst_null
+      [16] putfield #55
+        + Fieldref [com/handpay/shell/ProxyApplication.i Ljava/lang/String;]
+      [19] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()V
+    Access flags: 0x2
+      = private void a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 197, locals = 5, stack = 5):
+      [0] aload_0 v0
+      [1] invokevirtual #79
+        + Methodref [com/handpay/shell/ProxyApplication.getPackageName ()Ljava/lang/String;]
+      [4] astore_1 v1
+      [5] aload_0 v0
+      [6] aload_1 v1
+      [7] putfield #55
+        + Fieldref [com/handpay/shell/ProxyApplication.i Ljava/lang/String;]
+      [10] aload_1 v1
+      [11] invokestatic #74
+        + Methodref [com/handpay/shell/DexOperation.initEnvriment (Ljava/lang/String;)[Ljava/lang/String;]
+      [14] astore_2 v2
+      [15] new #35
+        + Class [java/io/File]
+      [18] dup
+      [19] aload_2 v2
+      [20] iconst_0
+      [21] aaload
+      [22] invokespecial #82
+        + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
+      [25] astore_3 v3
+      [26] aload_0 v0
+      [27] aload_2 v2
+      [28] iconst_1
+      [29] aaload
+      [30] putfield #51
+        + Fieldref [com/handpay/shell/ProxyApplication.e Ljava/lang/String;]
+      [33] ldc #18
+        + String [result]
+      [35] new #41
+        + Class [java/lang/StringBuilder]
+      [38] dup
+      [39] ldc #17
+        + String [odexPath:]
+      [41] invokespecial #100
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [44] aload_0 v0
+      [45] getfield #51
+        + Fieldref [com/handpay/shell/ProxyApplication.e Ljava/lang/String;]
+      [48] invokevirtual #103
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [51] invokevirtual #105
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [54] invokestatic #68
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [57] pop
+      [58] invokestatic #80
+        + Methodref [com/handpay/shell/a.a ()I]
+      [61] bipush 18
+      [63] ificmpge +26 (target=89)
+      [66] aload_3 v3
+      [67] invokevirtual #88
+        + Methodref [java/io/File.listFiles ()[Ljava/io/File;]
+      [70] arraylength
+      [71] ifgt +8 (target=79)
+      [74] aload_0 v0
+      [75] aload_3 v3
+      [76] invokespecial #76
+        + Methodref [com/handpay/shell/ProxyApplication.a (Ljava/io/File;)V]
+      [79] aload_0 v0
+      [80] aload_2 v2
+      [81] iconst_0
+      [82] aaload
+      [83] putfield #52
+        + Fieldref [com/handpay/shell/ProxyApplication.f Ljava/lang/String;]
+      [86] goto +11 (target=97)
+      [89] aload_0 v0
+      [90] aload_1 v1
+      [91] invokestatic #81
+        + Methodref [com/handpay/shell/a.a (Ljava/lang/String;)Ljava/lang/String;]
+      [94] putfield #52
+        + Fieldref [com/handpay/shell/ProxyApplication.f Ljava/lang/String;]
+      [97] ldc #18
+        + String [result]
+      [99] new #41
+        + Class [java/lang/StringBuilder]
+      [102] dup
+      [103] ldc #15
+        + String [libPath:]
+      [105] invokespecial #100
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [108] aload_0 v0
+      [109] getfield #52
+        + Fieldref [com/handpay/shell/ProxyApplication.f Ljava/lang/String;]
+      [112] invokevirtual #103
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [115] invokevirtual #105
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [118] invokestatic #68
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [121] pop
+      [122] aload_1 v1
+      [123] aload_1 v1
+      [124] ldc #2
+        + String [.]
+      [126] invokevirtual #97
+        + Methodref [java/lang/String.lastIndexOf (Ljava/lang/String;)I]
+      [129] iconst_1
+      [130] iadd
+      [131] invokevirtual #98
+        + Methodref [java/lang/String.substring (I)Ljava/lang/String;]
+      [134] astore v4
+      [136] aload_0 v0
+      [137] new #41
+        + Class [java/lang/StringBuilder]
+      [140] dup
+      [141] aload_2 v2
+      [142] iconst_2
+      [143] aaload
+      [144] invokestatic #99
+        + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
+      [147] invokespecial #100
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [150] ldc #4
+        + String [/]
+      [152] invokevirtual #103
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [155] aload v4
+      [157] invokevirtual #103
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [160] ldc #3
+        + String [.dex]
+      [162] invokevirtual #103
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [165] invokevirtual #105
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [168] putfield #50
+        + Fieldref [com/handpay/shell/ProxyApplication.d Ljava/lang/String;]
+      [171] ldc #18
+        + String [result]
+      [173] new #41
+        + Class [java/lang/StringBuilder]
+      [176] dup
+      [177] ldc #7
+        + String [apkFileName:]
+      [179] invokespecial #100
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [182] aload_0 v0
+      [183] getfield #50
+        + Fieldref [com/handpay/shell/ProxyApplication.d Ljava/lang/String;]
+      [186] invokevirtual #103
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [189] invokevirtual #105
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [192] invokestatic #68
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [195] pop
+      [196] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 3):
+        - [79] Var: ...[a:java/lang/String][a:[Ljava/lang/String;][a:java/io/File], Stack: (empty)
+        - [89] Var: ..., Stack: (empty)
+        - [97] Var: ..., Stack: (empty)
+  + Method:       attachBaseContext(Landroid/content/Context;)V
+    Access flags: 0x4
+      = protected void attachBaseContext(android.content.Context)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 216, locals = 11, stack = 6):
+      [0] invokestatic #69
+        + Methodref [com/handpay/shell/DexOperation.a ()Z]
+      [3] istore_2 v2
+      [4] ldc #18
+        + String [result]
+      [6] new #41
+        + Class [java/lang/StringBuilder]
+      [9] dup
+      [10] ldc #16
+        + String [load dex enableTurboDex:]
+      [12] invokespecial #100
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [15] iload_2 v2
+      [16] invokevirtual #104
+        + Methodref [java/lang/StringBuilder.append (Z)Ljava/lang/StringBuilder;]
+      [19] invokevirtual #105
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [22] invokestatic #68
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [25] pop
+      [26] aload_0 v0
+      [27] aload_1 v1
+      [28] invokespecial #57
+        + Methodref [android/app/Application.attachBaseContext (Landroid/content/Context;)V]
+      [31] ldc #18
+        + String [result]
+      [33] new #41
+        + Class [java/lang/StringBuilder]
+      [36] dup
+      [37] ldc #6
+        + String [Build.VERSION.SDK_INT:]
+      [39] invokespecial #100
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [42] getstatic #46
+        + Fieldref [android/os/Build$VERSION.SDK_INT I]
+      [45] invokevirtual #101
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [48] invokevirtual #105
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [51] invokestatic #68
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [54] pop
+      [55] invokestatic #106
+        + Methodref [java/lang/System.currentTimeMillis ()J]
+      [58] lstore_3 v3
+      [59] aload_0 v0
+      [60] invokespecial #75
+        + Methodref [com/handpay/shell/ProxyApplication.a ()V]
+      [63] invokestatic #106
+        + Methodref [java/lang/System.currentTimeMillis ()J]
+      [66] lstore v5
+      [68] ldc #18
+        + String [result]
+      [70] new #41
+        + Class [java/lang/StringBuilder]
+      [73] dup
+      [74] ldc #12
+        + String [init_envriment_time:]
+      [76] invokespecial #100
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [79] lload v5
+      [81] lload_3 v3
+      [82] lsub
+      [83] invokevirtual #102
+        + Methodref [java/lang/StringBuilder.append (J)Ljava/lang/StringBuilder;]
+      [86] invokevirtual #105
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [89] invokestatic #68
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [92] pop
+      [93] aload_0 v0
+      [94] aload_0 v0
+      [95] getfield #50
+        + Fieldref [com/handpay/shell/ProxyApplication.d Ljava/lang/String;]
+      [98] invokestatic #70
+        + Methodref [com/handpay/shell/DexOperation.a (Landroid/app/Application;Ljava/lang/String;)V]
+      [101] invokestatic #106
+        + Methodref [java/lang/System.currentTimeMillis ()J]
+      [104] lstore v7
+      [106] ldc #18
+        + String [result]
+      [108] new #41
+        + Class [java/lang/StringBuilder]
+      [111] dup
+      [112] ldc #9
+        + String [copyprogressData_time:]
+      [114] invokespecial #100
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [117] lload v7
+      [119] lload v5
+      [121] lsub
+      [122] invokevirtual #102
+        + Methodref [java/lang/StringBuilder.append (J)Ljava/lang/StringBuilder;]
+      [125] invokevirtual #105
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [128] invokestatic #68
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [131] pop
+      [132] aload_0 v0
+      [133] getfield #55
+        + Fieldref [com/handpay/shell/ProxyApplication.i Ljava/lang/String;]
+      [136] aload_0 v0
+      [137] getfield #50
+        + Fieldref [com/handpay/shell/ProxyApplication.d Ljava/lang/String;]
+      [140] aload_0 v0
+      [141] getfield #51
+        + Fieldref [com/handpay/shell/ProxyApplication.e Ljava/lang/String;]
+      [144] aload_0 v0
+      [145] getfield #52
+        + Fieldref [com/handpay/shell/ProxyApplication.f Ljava/lang/String;]
+      [148] invokestatic #71
+        + Methodref [com/handpay/shell/DexOperation.a (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V]
+      [151] invokestatic #106
+        + Methodref [java/lang/System.currentTimeMillis ()J]
+      [154] lstore v9
+      [156] ldc #18
+        + String [result]
+      [158] new #41
+        + Class [java/lang/StringBuilder]
+      [161] dup
+      [162] ldc #8
+        + String [chookdex_time:]
+      [164] invokespecial #100
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [167] lload v9
+      [169] lload v7
+      [171] lsub
+      [172] invokevirtual #102
+        + Methodref [java/lang/StringBuilder.append (J)Ljava/lang/StringBuilder;]
+      [175] invokevirtual #105
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [178] invokestatic #68
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [181] pop
+      [182] goto +33 (target=215)
+      [185] astore_3 v3
+      [186] ldc #18
+        + String [result]
+      [188] new #41
+        + Class [java/lang/StringBuilder]
+      [191] dup
+      [192] ldc #10
+        + String [error:]
+      [194] invokespecial #100
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [197] aload_3 v3
+      [198] invokestatic #67
+        + Methodref [android/util/Log.getStackTraceString (Ljava/lang/Throwable;)Ljava/lang/String;]
+      [201] invokevirtual #103
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [204] invokevirtual #105
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [207] invokestatic #68
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [210] pop
+      [211] aload_3 v3
+      [212] invokevirtual #96
+        + Methodref [java/lang/Exception.printStackTrace ()V]
+      [215] return
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (31 -> 182: 185):
+      + Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [185] Var: [a:com/handpay/shell/ProxyApplication][a:android/content/Context][i], Stack: [a:java/lang/Exception]
+        - [215] Var: ..., Stack: (empty)
+  + Method:       onCreate()V
+    Access flags: 0x1
+      = public void onCreate()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 122, locals = 7, stack = 6):
+      [0] invokestatic #106
+        + Methodref [java/lang/System.currentTimeMillis ()J]
+      [3] lstore_1 v1
+      [4] aconst_null
+      [5] astore_3 v3
+      [6] aload_0 v0
+      [7] invokevirtual #78
+        + Methodref [com/handpay/shell/ProxyApplication.getPackageManager ()Landroid/content/pm/PackageManager;]
+      [10] aload_0 v0
+      [11] invokevirtual #79
+        + Methodref [com/handpay/shell/ProxyApplication.getPackageName ()Ljava/lang/String;]
+      [14] sipush 128
+      [17] invokevirtual #63
+        + Methodref [android/content/pm/PackageManager.getApplicationInfo (Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;]
+      [20] astore v4
+      [22] aload v4
+      [24] getfield #45
+        + Fieldref [android/content/pm/ApplicationInfo.metaData Landroid/os/Bundle;]
+      [27] astore v5
+      [29] aload v5
+      [31] ifnull +24 (target=55)
+      [34] aload v5
+      [36] ldc #5
+        + String [APPLICATION_CLASS_NAME]
+      [38] invokevirtual #65
+        + Methodref [android/os/Bundle.containsKey (Ljava/lang/String;)Z]
+      [41] ifeq +14 (target=55)
+      [44] aload v5
+      [46] ldc #5
+        + String [APPLICATION_CLASS_NAME]
+      [48] invokevirtual #66
+        + Methodref [android/os/Bundle.getString (Ljava/lang/String;)Ljava/lang/String;]
+      [51] astore_3 v3
+      [52] goto +19 (target=71)
+      [55] ldc #18
+        + String [result]
+      [57] ldc #11
+        + String [have no application class name]
+      [59] invokestatic #68
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [62] pop
+      [63] return
+      [64] astore v4
+      [66] aload v4
+      [68] invokevirtual #64
+        + Methodref [android/content/pm/PackageManager$NameNotFoundException.printStackTrace ()V]
+      [71] aload_0 v0
+      [72] aload_3 v3
+      [73] invokestatic #73
+        + Methodref [com/handpay/shell/DexOperation.b (Landroid/app/Application;Ljava/lang/String;)Landroid/app/Application;]
+      [76] astore v4
+      [78] invokestatic #106
+        + Methodref [java/lang/System.currentTimeMillis ()J]
+      [81] lstore v5
+      [83] ldc #18
+        + String [result]
+      [85] new #41
+        + Class [java/lang/StringBuilder]
+      [88] dup
+      [89] ldc #13
+        + String [intefaceapplication_time]
+      [91] invokespecial #100
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [94] lload v5
+      [96] lload_1 v1
+      [97] lsub
+      [98] invokevirtual #102
+        + Methodref [java/lang/StringBuilder.append (J)Ljava/lang/StringBuilder;]
+      [101] invokevirtual #105
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [104] invokestatic #68
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [107] pop
+      [108] aload v4
+      [110] ifnull +8 (target=118)
+      [113] aload v4
+      [115] invokevirtual #61
+        + Methodref [android/app/Application.onCreate ()V]
+      [118] invokestatic #72
+        + Methodref [com/handpay/shell/DexOperation.b ()V]
+      [121] return
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (6 -> 63: 64):
+      + Class [android/content/pm/PackageManager$NameNotFoundException]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 4):
+        - [55] Var: [a:com/handpay/shell/ProxyApplication][l][a:java/lang/String][a:android/content/pm/ApplicationInfo][a:android/os/Bundle], Stack: 
+        - [64] Var: [a:com/handpay/shell/ProxyApplication][l][a:java/lang/String], Stack: [a:android/content/pm/PackageManager$NameNotFoundException]
+        - [71] Var: ..., Stack: (empty)
+        - [118] Var: ...[a:android/app/Application][l], Stack: (empty)
+  + Method:       a(Ljava/io/File;)V
+    Access flags: 0x2
+      = private void a(java.io.File)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 159, locals = 10, stack = 5):
+      [0] new #35
+        + Class [java/io/File]
+      [3] dup
+      [4] aload_0 v0
+      [5] invokevirtual #79
+        + Methodref [com/handpay/shell/ProxyApplication.getPackageName ()Ljava/lang/String;]
+      [8] invokestatic #81
+        + Methodref [com/handpay/shell/a.a (Ljava/lang/String;)Ljava/lang/String;]
+      [11] invokespecial #82
+        + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
+      [14] astore_2 v2
+      [15] aload_2 v2
+      [16] invokevirtual #85
+        + Methodref [java/io/File.exists ()Z]
+      [19] ifne +11 (target=30)
+      [22] ldc #18
+        + String [result]
+      [24] ldc #14
+        + String [lib not find]
+      [26] invokestatic #68
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [29] pop
+      [30] aload_2 v2
+      [31] invokevirtual #88
+        + Methodref [java/io/File.listFiles ()[Ljava/io/File;]
+      [34] dup
+      [35] astore v6
+      [37] arraylength
+      [38] istore v5
+      [40] iconst_0
+      [41] istore v4
+      [43] goto +71 (target=114)
+      [46] aload v6
+      [48] iload v4
+      [50] aaload
+      [51] astore_3 v3
+      [52] aload_3 v3
+      [53] invokevirtual #87
+        + Methodref [java/io/File.getName ()Ljava/lang/String;]
+      [56] astore v7
+      [58] new #35
+        + Class [java/io/File]
+      [61] dup
+      [62] new #41
+        + Class [java/lang/StringBuilder]
+      [65] dup
+      [66] aload_1 v1
+      [67] invokevirtual #86
+        + Methodref [java/io/File.getAbsolutePath ()Ljava/lang/String;]
+      [70] invokestatic #99
+        + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
+      [73] invokespecial #100
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [76] ldc #4
+        + String [/]
+      [78] invokevirtual #103
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [81] aload v7
+      [83] invokevirtual #103
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [86] invokevirtual #105
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [89] invokespecial #82
+        + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
+      [92] astore v8
+      [94] aload v8
+      [96] invokevirtual #83
+        + Methodref [java/io/File.createNewFile ()Z]
+      [99] pop
+      [100] aload_3 v3
+      [101] aload v8
+      [103] invokestatic #77
+        + Methodref [com/handpay/shell/ProxyApplication.a (Ljava/io/File;Ljava/io/File;)V]
+      [106] goto +5 (target=111)
+      [109] astore v9
+      [111] iinc v4, 1
+      [114] iload v4
+      [116] iload v5
+      [118] ificmplt -72 (target=46)
+      [121] aload_2 v2
+      [122] invokevirtual #88
+        + Methodref [java/io/File.listFiles ()[Ljava/io/File;]
+      [125] dup
+      [126] astore v6
+      [128] arraylength
+      [129] istore v5
+      [131] iconst_0
+      [132] istore v4
+      [134] goto +17 (target=151)
+      [137] aload v6
+      [139] iload v4
+      [141] aaload
+      [142] astore_3 v3
+      [143] aload_3 v3
+      [144] invokevirtual #84
+        + Methodref [java/io/File.delete ()Z]
+      [147] pop
+      [148] iinc v4, 1
+      [151] iload v4
+      [153] iload v5
+      [155] ificmplt -18 (target=137)
+      [158] return
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (94 -> 106: 109):
+      + Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 7):
+        - [30] Var: ...[a:java/io/File], Stack: (empty)
+        - [46] Var: [a:com/handpay/shell/ProxyApplication][a:java/io/File][a:java/io/File][T][i][i][a:[Ljava/io/File;], Stack: 
+        - [109] Var: [a:com/handpay/shell/ProxyApplication][a:java/io/File][a:java/io/File][a:java/io/File][i][i][a:[Ljava/io/File;][a:java/lang/String][a:java/io/File], Stack: [a:java/lang/Exception]
+        - [111] Var: [a:com/handpay/shell/ProxyApplication][a:java/io/File][a:java/io/File][T][i][i][a:[Ljava/io/File;], Stack: 
+        - [114] Var: ..., Stack: (empty)
+        - [137] Var: ..., Stack: (empty)
+        - [151] Var: ..., Stack: (empty)
+  + Method:       a(Ljava/io/File;Ljava/io/File;)V
+    Access flags: 0xa
+      = private static void a(java.io.File,java.io.File)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 141, locals = 9, stack = 6):
+      [0] aconst_null
+      [1] astore_2 v2
+      [2] aconst_null
+      [3] astore_3 v3
+      [4] aconst_null
+      [5] astore v4
+      [7] aconst_null
+      [8] astore v5
+      [10] new #36
+        + Class [java/io/FileInputStream]
+      [13] dup
+      [14] aload_0 v0
+      [15] invokespecial #89
+        + Methodref [java/io/FileInputStream.<init> (Ljava/io/File;)V]
+      [18] astore v4
+      [20] new #37
+        + Class [java/io/FileOutputStream]
+      [23] dup
+      [24] aload_1 v1
+      [25] invokespecial #92
+        + Methodref [java/io/FileOutputStream.<init> (Ljava/io/File;)V]
+      [28] astore v5
+      [30] aload v4
+      [32] invokevirtual #91
+        + Methodref [java/io/FileInputStream.getChannel ()Ljava/nio/channels/FileChannel;]
+      [35] astore_2 v2
+      [36] aload v5
+      [38] invokevirtual #94
+        + Methodref [java/io/FileOutputStream.getChannel ()Ljava/nio/channels/FileChannel;]
+      [41] astore_3 v3
+      [42] aload_2 v2
+      [43] lconst_0
+      [44] aload_2 v2
+      [45] invokevirtual #108
+        + Methodref [java/nio/channels/FileChannel.size ()J]
+      [48] aload_3 v3
+      [49] invokevirtual #109
+        + Methodref [java/nio/channels/FileChannel.transferTo (JJLjava/nio/channels/WritableByteChannel;)J]
+      [52] pop2
+      [53] goto +64 (target=117)
+      [56] astore v6
+      [58] aload v6
+      [60] invokevirtual #95
+        + Methodref [java/io/IOException.printStackTrace ()V]
+      [63] aload v4
+      [65] invokevirtual #90
+        + Methodref [java/io/FileInputStream.close ()V]
+      [68] aload_2 v2
+      [69] invokevirtual #107
+        + Methodref [java/nio/channels/FileChannel.close ()V]
+      [72] aload v5
+      [74] invokevirtual #93
+        + Methodref [java/io/FileOutputStream.close ()V]
+      [77] aload_3 v3
+      [78] invokevirtual #107
+        + Methodref [java/nio/channels/FileChannel.close ()V]
+      [81] goto +59 (target=140)
+      [84] astore v8
+      [86] goto +54 (target=140)
+      [89] astore v7
+      [91] aload v4
+      [93] invokevirtual #90
+        + Methodref [java/io/FileInputStream.close ()V]
+      [96] aload_2 v2
+      [97] invokevirtual #107
+        + Methodref [java/nio/channels/FileChannel.close ()V]
+      [100] aload v5
+      [102] invokevirtual #93
+        + Methodref [java/io/FileOutputStream.close ()V]
+      [105] aload_3 v3
+      [106] invokevirtual #107
+        + Methodref [java/nio/channels/FileChannel.close ()V]
+      [109] goto +5 (target=114)
+      [112] astore v8
+      [114] aload v7
+      [116] athrow
+      [117] aload v4
+      [119] invokevirtual #90
+        + Methodref [java/io/FileInputStream.close ()V]
+      [122] aload_2 v2
+      [123] invokevirtual #107
+        + Methodref [java/nio/channels/FileChannel.close ()V]
+      [126] aload v5
+      [128] invokevirtual #93
+        + Methodref [java/io/FileOutputStream.close ()V]
+      [131] aload_3 v3
+      [132] invokevirtual #107
+        + Methodref [java/nio/channels/FileChannel.close ()V]
+      [135] goto +5 (target=140)
+      [138] astore v8
+      [140] return
+      Code attribute exceptions (count = 5):
+      - ExceptionInfo (10 -> 53: 56):
+      + Class [java/io/IOException]
+      - ExceptionInfo (63 -> 81: 84):
+      + Class [java/lang/Exception]
+      - ExceptionInfo (10 -> 63: 89):
+      - ExceptionInfo (91 -> 109: 112):
+      + Class [java/lang/Exception]
+      - ExceptionInfo (117 -> 135: 138):
+      + Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 9):
+        - [56] Var: [a:java/io/File][a:java/io/File][a:java/nio/channels/FileChannel][a:java/nio/channels/FileChannel][a:java/io/FileInputStream][a:java/io/FileOutputStream], Stack: [a:java/io/IOException]
+        - [84] Var: ..., Stack: [a:java/lang/Exception]
+        - [86] Var: ..., Stack: (empty)
+        - [89] Var: ..., Stack: [a:java/lang/Throwable]
+        - [112] Var: [a:java/io/File][a:java/io/File][a:java/nio/channels/FileChannel][a:java/nio/channels/FileChannel][a:java/io/FileInputStream][a:java/io/FileOutputStream][T][a:java/lang/Throwable], Stack: [a:java/lang/Exception]
+        - [114] Var: ..., Stack: (empty)
+        - [117] Var: [a:java/io/File][a:java/io/File][a:java/nio/channels/FileChannel][a:java/nio/channels/FileChannel][a:java/io/FileInputStream][a:java/io/FileOutputStream], Stack: 
+        - [138] Var: ..., Stack: [a:java/lang/Exception]
+        - [140] Var: ..., Stack: (empty)
+  + Method:       getAssets()Landroid/content/res/AssetManager;
+    Access flags: 0x1
+      = public android.content.res.AssetManager getAssets()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 19, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #47
+        + Fieldref [com/handpay/shell/ProxyApplication.a Landroid/content/res/AssetManager;]
+      [4] ifnonnull +10 (target=14)
+      [7] aload_0 v0
+      [8] invokespecial #58
+        + Methodref [android/app/Application.getAssets ()Landroid/content/res/AssetManager;]
+      [11] goto +7 (target=18)
+      [14] aload_0 v0
+      [15] getfield #47
+        + Fieldref [com/handpay/shell/ProxyApplication.a Landroid/content/res/AssetManager;]
+      [18] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [14] Var: ..., Stack: (empty)
+        - [18] Var: ..., Stack: [a:android/content/res/AssetManager]
+  + Method:       getResources()Landroid/content/res/Resources;
+    Access flags: 0x1
+      = public android.content.res.Resources getResources()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 19, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #48
+        + Fieldref [com/handpay/shell/ProxyApplication.b Landroid/content/res/Resources;]
+      [4] ifnonnull +10 (target=14)
+      [7] aload_0 v0
+      [8] invokespecial #59
+        + Methodref [android/app/Application.getResources ()Landroid/content/res/Resources;]
+      [11] goto +7 (target=18)
+      [14] aload_0 v0
+      [15] getfield #48
+        + Fieldref [com/handpay/shell/ProxyApplication.b Landroid/content/res/Resources;]
+      [18] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [14] Var: ..., Stack: (empty)
+        - [18] Var: ..., Stack: [a:android/content/res/Resources]
+  + Method:       getTheme()Landroid/content/res/Resources$Theme;
+    Access flags: 0x1
+      = public android.content.res.Resources$Theme getTheme()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 19, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #49
+        + Fieldref [com/handpay/shell/ProxyApplication.c Landroid/content/res/Resources$Theme;]
+      [4] ifnonnull +10 (target=14)
+      [7] aload_0 v0
+      [8] invokespecial #60
+        + Methodref [android/app/Application.getTheme ()Landroid/content/res/Resources$Theme;]
+      [11] goto +7 (target=18)
+      [14] aload_0 v0
+      [15] getfield #49
+        + Fieldref [com/handpay/shell/ProxyApplication.c Landroid/content/res/Resources$Theme;]
+      [18] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [14] Var: ..., Stack: (empty)
+        - [18] Var: ..., Stack: [a:android/content/res/Resources$Theme]
+  + Method:       onTerminate()V
+    Access flags: 0x1
+      = public void onTerminate()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #62
+        + Methodref [android/app/Application.onTerminate ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 1):
+  + Runtime invisible annotations attribute:
+    - Annotation [Landroid/annotation/TargetApi;]:
+      - Constant element value [value '73']
+        + Integer [19]
+
+_____________________________________________________________________
++ Program class: com/handpay/shell/b
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.handpay.shell.b extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 70):
+  + Class [com/handpay/shell/b]
+  + Class [java/lang/Class]
+  + Class [java/lang/ClassNotFoundException]
+  + Class [java/lang/IllegalAccessException]
+  + Class [java/lang/IllegalArgumentException]
+  + Class [java/lang/NoSuchFieldException]
+  + Class [java/lang/NoSuchMethodException]
+  + Class [java/lang/Object]
+  + Class [java/lang/SecurityException]
+  + Class [java/lang/reflect/Field]
+  + Class [java/lang/reflect/InvocationTargetException]
+  + Class [java/lang/reflect/Method]
+  + Methodref [java/lang/Class.forName (Ljava/lang/String;)Ljava/lang/Class;]
+  + Methodref [java/lang/Class.getDeclaredField (Ljava/lang/String;)Ljava/lang/reflect/Field;]
+  + Methodref [java/lang/Class.getMethod (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;]
+  + Methodref [java/lang/ClassNotFoundException.printStackTrace ()V]
+  + Methodref [java/lang/IllegalAccessException.printStackTrace ()V]
+  + Methodref [java/lang/IllegalArgumentException.printStackTrace ()V]
+  + Methodref [java/lang/NoSuchFieldException.printStackTrace ()V]
+  + Methodref [java/lang/NoSuchMethodException.printStackTrace ()V]
+  + Methodref [java/lang/SecurityException.printStackTrace ()V]
+  + Methodref [java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;]
+  + Methodref [java/lang/reflect/Field.set (Ljava/lang/Object;Ljava/lang/Object;)V]
+  + Methodref [java/lang/reflect/Field.setAccessible (Z)V]
+  + Methodref [java/lang/reflect/InvocationTargetException.printStackTrace ()V]
+  + Methodref [java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;]
+  + NameAndType [forName (Ljava/lang/String;)Ljava/lang/Class;]
+  + NameAndType [get (Ljava/lang/Object;)Ljava/lang/Object;]
+  + NameAndType [getDeclaredField (Ljava/lang/String;)Ljava/lang/reflect/Field;]
+  + NameAndType [getMethod (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;]
+  + NameAndType [invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;]
+  + NameAndType [printStackTrace ()V]
+  + NameAndType [set (Ljava/lang/Object;Ljava/lang/Object;)V]
+  + NameAndType [setAccessible (Z)V]
+  + Utf8 [()V]
+  + Utf8 [(Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/Object;Ljava/lang/Object;)V]
+  + Utf8 [(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/Class;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/reflect/Field;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;]
+  + Utf8 [(Z)V]
+  + Utf8 [Code]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [com/handpay/shell/b]
+  + Utf8 [forName]
+  + Utf8 [get]
+  + Utf8 [getDeclaredField]
+  + Utf8 [getMethod]
+  + Utf8 [invoke]
+  + Utf8 [java/lang/Class]
+  + Utf8 [java/lang/ClassNotFoundException]
+  + Utf8 [java/lang/IllegalAccessException]
+  + Utf8 [java/lang/IllegalArgumentException]
+  + Utf8 [java/lang/NoSuchFieldException]
+  + Utf8 [java/lang/NoSuchMethodException]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/SecurityException]
+  + Utf8 [java/lang/reflect/Field]
+  + Utf8 [java/lang/reflect/InvocationTargetException]
+  + Utf8 [java/lang/reflect/Method]
+  + Utf8 [printStackTrace]
+  + Utf8 [set]
+  + Utf8 [setAccessible]
+
+Fields (count = 0):
+
+Methods (count = 4):
+  + Method:       a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+    Access flags: 0x9
+      = public static java.lang.Object a(java.lang.String,java.lang.String,java.lang.Class[],java.lang.Object[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 82, locals = 6, stack = 3):
+      [0] aload_0 v0
+      [1] invokestatic #13
+        + Methodref [java/lang/Class.forName (Ljava/lang/String;)Ljava/lang/Class;]
+      [4] astore v4
+      [6] aload v4
+      [8] aload_1 v1
+      [9] aload_2 v2
+      [10] invokevirtual #15
+        + Methodref [java/lang/Class.getMethod (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;]
+      [13] astore v5
+      [15] aload v5
+      [17] aconst_null
+      [18] aload_3 v3
+      [19] invokevirtual #26
+        + Methodref [java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;]
+      [22] areturn
+      [23] astore v4
+      [25] aload v4
+      [27] invokevirtual #21
+        + Methodref [java/lang/SecurityException.printStackTrace ()V]
+      [30] goto +50 (target=80)
+      [33] astore v4
+      [35] aload v4
+      [37] invokevirtual #18
+        + Methodref [java/lang/IllegalArgumentException.printStackTrace ()V]
+      [40] goto +40 (target=80)
+      [43] astore v4
+      [45] aload v4
+      [47] invokevirtual #17
+        + Methodref [java/lang/IllegalAccessException.printStackTrace ()V]
+      [50] goto +30 (target=80)
+      [53] astore v4
+      [55] aload v4
+      [57] invokevirtual #20
+        + Methodref [java/lang/NoSuchMethodException.printStackTrace ()V]
+      [60] goto +20 (target=80)
+      [63] astore v4
+      [65] aload v4
+      [67] invokevirtual #25
+        + Methodref [java/lang/reflect/InvocationTargetException.printStackTrace ()V]
+      [70] goto +10 (target=80)
+      [73] astore v4
+      [75] aload v4
+      [77] invokevirtual #16
+        + Methodref [java/lang/ClassNotFoundException.printStackTrace ()V]
+      [80] aconst_null
+      [81] areturn
+      Code attribute exceptions (count = 6):
+      - ExceptionInfo (0 -> 22: 23):
+      + Class [java/lang/SecurityException]
+      - ExceptionInfo (0 -> 22: 33):
+      + Class [java/lang/IllegalArgumentException]
+      - ExceptionInfo (0 -> 22: 43):
+      + Class [java/lang/IllegalAccessException]
+      - ExceptionInfo (0 -> 22: 53):
+      + Class [java/lang/NoSuchMethodException]
+      - ExceptionInfo (0 -> 22: 63):
+      + Class [java/lang/reflect/InvocationTargetException]
+      - ExceptionInfo (0 -> 22: 73):
+      + Class [java/lang/ClassNotFoundException]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 7):
+        - [23] Var: ..., Stack: [a:java/lang/SecurityException]
+        - [33] Var: ..., Stack: [a:java/lang/IllegalArgumentException]
+        - [43] Var: ..., Stack: [a:java/lang/IllegalAccessException]
+        - [53] Var: ..., Stack: [a:java/lang/NoSuchMethodException]
+        - [63] Var: ..., Stack: [a:java/lang/reflect/InvocationTargetException]
+        - [73] Var: ..., Stack: [a:java/lang/ClassNotFoundException]
+        - [80] Var: ..., Stack: (empty)
+  + Method:       a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+    Access flags: 0x9
+      = public static java.lang.Object a(java.lang.String,java.lang.String,java.lang.Object,java.lang.Class[],java.lang.Object[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 83, locals = 7, stack = 3):
+      [0] aload_0 v0
+      [1] invokestatic #13
+        + Methodref [java/lang/Class.forName (Ljava/lang/String;)Ljava/lang/Class;]
+      [4] astore v5
+      [6] aload v5
+      [8] aload_1 v1
+      [9] aload_3 v3
+      [10] invokevirtual #15
+        + Methodref [java/lang/Class.getMethod (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;]
+      [13] astore v6
+      [15] aload v6
+      [17] aload_2 v2
+      [18] aload v4
+      [20] invokevirtual #26
+        + Methodref [java/lang/reflect/Method.invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;]
+      [23] areturn
+      [24] astore v5
+      [26] aload v5
+      [28] invokevirtual #21
+        + Methodref [java/lang/SecurityException.printStackTrace ()V]
+      [31] goto +50 (target=81)
+      [34] astore v5
+      [36] aload v5
+      [38] invokevirtual #18
+        + Methodref [java/lang/IllegalArgumentException.printStackTrace ()V]
+      [41] goto +40 (target=81)
+      [44] astore v5
+      [46] aload v5
+      [48] invokevirtual #17
+        + Methodref [java/lang/IllegalAccessException.printStackTrace ()V]
+      [51] goto +30 (target=81)
+      [54] astore v5
+      [56] aload v5
+      [58] invokevirtual #20
+        + Methodref [java/lang/NoSuchMethodException.printStackTrace ()V]
+      [61] goto +20 (target=81)
+      [64] astore v5
+      [66] aload v5
+      [68] invokevirtual #25
+        + Methodref [java/lang/reflect/InvocationTargetException.printStackTrace ()V]
+      [71] goto +10 (target=81)
+      [74] astore v5
+      [76] aload v5
+      [78] invokevirtual #16
+        + Methodref [java/lang/ClassNotFoundException.printStackTrace ()V]
+      [81] aconst_null
+      [82] areturn
+      Code attribute exceptions (count = 6):
+      - ExceptionInfo (0 -> 23: 24):
+      + Class [java/lang/SecurityException]
+      - ExceptionInfo (0 -> 23: 34):
+      + Class [java/lang/IllegalArgumentException]
+      - ExceptionInfo (0 -> 23: 44):
+      + Class [java/lang/IllegalAccessException]
+      - ExceptionInfo (0 -> 23: 54):
+      + Class [java/lang/NoSuchMethodException]
+      - ExceptionInfo (0 -> 23: 64):
+      + Class [java/lang/reflect/InvocationTargetException]
+      - ExceptionInfo (0 -> 23: 74):
+      + Class [java/lang/ClassNotFoundException]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 7):
+        - [24] Var: ..., Stack: [a:java/lang/SecurityException]
+        - [34] Var: ..., Stack: [a:java/lang/IllegalArgumentException]
+        - [44] Var: ..., Stack: [a:java/lang/IllegalAccessException]
+        - [54] Var: ..., Stack: [a:java/lang/NoSuchMethodException]
+        - [64] Var: ..., Stack: [a:java/lang/reflect/InvocationTargetException]
+        - [74] Var: ..., Stack: [a:java/lang/ClassNotFoundException]
+        - [81] Var: ..., Stack: (empty)
+  + Method:       a(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    Access flags: 0x9
+      = public static java.lang.Object a(java.lang.String,java.lang.Object,java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 64, locals = 5, stack = 2):
+      [0] aload_0 v0
+      [1] invokestatic #13
+        + Methodref [java/lang/Class.forName (Ljava/lang/String;)Ljava/lang/Class;]
+      [4] astore_3 v3
+      [5] aload_3 v3
+      [6] aload_2 v2
+      [7] invokevirtual #14
+        + Methodref [java/lang/Class.getDeclaredField (Ljava/lang/String;)Ljava/lang/reflect/Field;]
+      [10] astore v4
+      [12] aload v4
+      [14] iconst_1
+      [15] invokevirtual #24
+        + Methodref [java/lang/reflect/Field.setAccessible (Z)V]
+      [18] aload v4
+      [20] aload_1 v1
+      [21] invokevirtual #22
+        + Methodref [java/lang/reflect/Field.get (Ljava/lang/Object;)Ljava/lang/Object;]
+      [24] areturn
+      [25] astore_3 v3
+      [26] aload_3 v3
+      [27] invokevirtual #21
+        + Methodref [java/lang/SecurityException.printStackTrace ()V]
+      [30] goto +32 (target=62)
+      [33] astore_3 v3
+      [34] aload_3 v3
+      [35] invokevirtual #19
+        + Methodref [java/lang/NoSuchFieldException.printStackTrace ()V]
+      [38] goto +24 (target=62)
+      [41] astore_3 v3
+      [42] aload_3 v3
+      [43] invokevirtual #18
+        + Methodref [java/lang/IllegalArgumentException.printStackTrace ()V]
+      [46] goto +16 (target=62)
+      [49] astore_3 v3
+      [50] aload_3 v3
+      [51] invokevirtual #17
+        + Methodref [java/lang/IllegalAccessException.printStackTrace ()V]
+      [54] goto +8 (target=62)
+      [57] astore_3 v3
+      [58] aload_3 v3
+      [59] invokevirtual #16
+        + Methodref [java/lang/ClassNotFoundException.printStackTrace ()V]
+      [62] aconst_null
+      [63] areturn
+      Code attribute exceptions (count = 5):
+      - ExceptionInfo (0 -> 24: 25):
+      + Class [java/lang/SecurityException]
+      - ExceptionInfo (0 -> 24: 33):
+      + Class [java/lang/NoSuchFieldException]
+      - ExceptionInfo (0 -> 24: 41):
+      + Class [java/lang/IllegalArgumentException]
+      - ExceptionInfo (0 -> 24: 49):
+      + Class [java/lang/IllegalAccessException]
+      - ExceptionInfo (0 -> 24: 57):
+      + Class [java/lang/ClassNotFoundException]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 6):
+        - [25] Var: ..., Stack: [a:java/lang/SecurityException]
+        - [33] Var: ..., Stack: [a:java/lang/NoSuchFieldException]
+        - [41] Var: ..., Stack: [a:java/lang/IllegalArgumentException]
+        - [49] Var: ..., Stack: [a:java/lang/IllegalAccessException]
+        - [57] Var: ..., Stack: [a:java/lang/ClassNotFoundException]
+        - [62] Var: ..., Stack: (empty)
+  + Method:       a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+    Access flags: 0x9
+      = public static void a(java.lang.String,java.lang.String,java.lang.Object,java.lang.Object)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 78, locals = 6, stack = 3):
+      [0] aload_0 v0
+      [1] invokestatic #13
+        + Methodref [java/lang/Class.forName (Ljava/lang/String;)Ljava/lang/Class;]
+      [4] astore v4
+      [6] aload v4
+      [8] aload_1 v1
+      [9] invokevirtual #14
+        + Methodref [java/lang/Class.getDeclaredField (Ljava/lang/String;)Ljava/lang/reflect/Field;]
+      [12] astore v5
+      [14] aload v5
+      [16] iconst_1
+      [17] invokevirtual #24
+        + Methodref [java/lang/reflect/Field.setAccessible (Z)V]
+      [20] aload v5
+      [22] aload_2 v2
+      [23] aload_3 v3
+      [24] invokevirtual #23
+        + Methodref [java/lang/reflect/Field.set (Ljava/lang/Object;Ljava/lang/Object;)V]
+      [27] goto +50 (target=77)
+      [30] astore v4
+      [32] aload v4
+      [34] invokevirtual #21
+        + Methodref [java/lang/SecurityException.printStackTrace ()V]
+      [37] goto +40 (target=77)
+      [40] astore v4
+      [42] aload v4
+      [44] invokevirtual #19
+        + Methodref [java/lang/NoSuchFieldException.printStackTrace ()V]
+      [47] goto +30 (target=77)
+      [50] astore v4
+      [52] aload v4
+      [54] invokevirtual #18
+        + Methodref [java/lang/IllegalArgumentException.printStackTrace ()V]
+      [57] goto +20 (target=77)
+      [60] astore v4
+      [62] aload v4
+      [64] invokevirtual #17
+        + Methodref [java/lang/IllegalAccessException.printStackTrace ()V]
+      [67] goto +10 (target=77)
+      [70] astore v4
+      [72] aload v4
+      [74] invokevirtual #16
+        + Methodref [java/lang/ClassNotFoundException.printStackTrace ()V]
+      [77] return
+      Code attribute exceptions (count = 5):
+      - ExceptionInfo (0 -> 27: 30):
+      + Class [java/lang/SecurityException]
+      - ExceptionInfo (0 -> 27: 40):
+      + Class [java/lang/NoSuchFieldException]
+      - ExceptionInfo (0 -> 27: 50):
+      + Class [java/lang/IllegalArgumentException]
+      - ExceptionInfo (0 -> 27: 60):
+      + Class [java/lang/IllegalAccessException]
+      - ExceptionInfo (0 -> 27: 70):
+      + Class [java/lang/ClassNotFoundException]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 6):
+        - [30] Var: ..., Stack: [a:java/lang/SecurityException]
+        - [40] Var: ..., Stack: [a:java/lang/NoSuchFieldException]
+        - [50] Var: ..., Stack: [a:java/lang/IllegalArgumentException]
+        - [60] Var: ..., Stack: [a:java/lang/IllegalAccessException]
+        - [70] Var: ..., Stack: [a:java/lang/ClassNotFoundException]
+        - [77] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+

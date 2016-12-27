@@ -1,0 +1,58 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+# 指定代码的压缩级别 
+-optimizationpasses 5
+# 是否使用大小写混合
+-dontusemixedcaseclassnames
+#是否混淆第三方jar 
+-dontskipnonpubliclibraryclasses
+#混淆时是否做预校验
+-dontpreverify
+-ignorewarnings
+# 混淆时是否记录日志 
+-verbose
+# 混淆时所采用的算法 
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+-dontwarn android.**
+-dontwarn javax.naming.**22
+
+-keepattributes *Annotation*
+-keepattributes Signature
+# 保持哪些类不被混淆 
+-keep class java.lang.annotation.** { *; } 
+-keep class javax.naming.** { *; } 
+
+# 保持 native 方法不被混淆  
+-keepclasseswithmembernames class * { 
+    native <methods>; 
+}
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+# umeng sdk
+-keepclassmembers class * {
+   public <init>(org.json.JSONObject);
+}
